@@ -1,0 +1,73 @@
+.footer {
+  padding: 36px 24px;
+
+  .inner {
+    margin: 0;
+    padding: 0;
+
+    .wawes-icon {
+      display: none;
+    }
+
+    .desktop {
+      .sub-group {
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-end;
+
+        .wawes-icon {
+          width: 70px;
+          height: 59px;
+          margin: 0;
+          display: block;
+          padding-bottom: 36px;
+        }
+
+        .social-media-links {
+          display: flex;
+          margin: 0 0 33%;
+          padding: 0;
+          align-items: flex-start;
+
+          a {
+            padding: 0 8px 8px;
+            margin: 0;
+          }
+        }
+      }
+
+      .social-media-links {
+        display: none;
+      }
+    }
+
+    .footer-bottom p a {
+      font-size: 13px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .block {
+      margin-right: 0;
+      text-align: left;
+      width: 50%;
+
+      h5 {
+        margin: 10px 0;
+      }
+    }
+
+    .spacer {
+      display: none;
+    }
+  }
+
+  .socials-block {
+    width: 75%;
+    text-align: left;
+  }
+}
