@@ -1,3 +1,12 @@
+/** Site banner **/
+
+.green-back {
+  padding: 0px;
+  background-color: #a7c194;
+  text-align: center;
+  color: $font-color
+}
+
 /**
  * Site header
  */
@@ -6,11 +15,8 @@
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  background-color: white;
   @include media-query($on-palm) {
-    background-color: blanchedalmond;
   }
 }
 
@@ -23,6 +29,7 @@
 
   @include media-query($on-palm) {
     padding-right: 45px;
+    width: 65%;
   }
 
   &,
@@ -31,10 +38,37 @@
   }
 }
 
+.methodology-logo {
+  @include media-query($on-palm) {
+    padding-right: 45px;
+    margin-left: 100px;
+  }
+}
+
+.user-login {
+  @include media-query($on-palm) {
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    p {
+      text-transform: capitalize;
+    }
+    img {
+      width: 25px;
+      height: 50px;
+      margin-left: 5px;
+      margin-top: 1px;
+    }
+  }
+  @media screen and (min-width: $on-medium) {
+    display: none;
+  }
+}
+
 .site-nav {
   position: absolute;
-  top: 9px;
-  right: $spacing-unit * .5;
+  top: 80px;
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
