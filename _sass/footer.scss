@@ -1,73 +1,199 @@
 .footer {
-  padding: 36px 24px;
+  color: $darkColor;
+  padding: 48px 0px 24px;
 
   .inner {
-    margin: 0;
     padding: 0;
-
-    .wawes-icon {
-      display: none;
-    }
+    text-transform: capitalize;
 
     .desktop {
-      .sub-group {
-        flex-direction: column;
-        text-align: left;
-        justify-content: flex-end;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
 
-        .wawes-icon {
-          width: 70px;
-          height: 59px;
-          margin: 0;
-          display: block;
-          padding-bottom: 36px;
+      .sub-group {
+        flex-basis: 35%;
+        display: flex;
+        justify-content: space-between;
+
+        .wawes-icon,
+        .social-media-links {
+          display: none;
         }
 
-        .social-media-links {
-          display: flex;
-          margin: 0 0 33%;
+        p {
+          margin: 0;
           padding: 0;
-          align-items: flex-start;
+          padding-bottom: 20px;
 
           a {
-            padding: 0 8px 8px;
             margin: 0;
+            padding: 0;
+
+            &:hover {
+              text-decoration: underline !important;
+            }
           }
         }
       }
 
+      .wawes-icon {
+        width: 78px;
+        height: 65.98px;
+      }
+
       .social-media-links {
-        display: none;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+
+        a {
+          padding: 0 8px 8px;
+          margin: 0;
+        }
       }
     }
 
-    .footer-bottom p a {
-      font-size: 13px;
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid $darkColor;
+      column-gap: 93px;
+
+      p {
+        margin: 0;
+        padding-top: 24px;
+        font-size: 15px;
+        line-height: 18px;
+        color: $darkColor;
+
+        a {
+          &:hover {
+            text-decoration: underline !important;
+          }
+        }
+      }
     }
+  }
+
+  .logo {
+    img {
+      width: 146px;
+    }
+  }
+
+  h5 {
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 300;
+    color: inherit;
+    line-height: 1.4;
+    display: block;
+    margin-top: 8px;
   }
 
   .bottom {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 50px;
 
     .block {
-      margin-right: 0;
-      text-align: left;
-      width: 50%;
-
-      h5 {
-        margin: 10px 0;
-      }
+      margin-right: 120px;
     }
 
     .spacer {
-      display: none;
+      flex-grow: 1;
     }
   }
 
   .socials-block {
-    width: 75%;
-    text-align: left;
+    width: 240px;
+
+    h5 {
+      font-size: 16px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+@include media-query($on-palm) {
+  .footer {
+    padding: 36px 24px;
+
+    .inner {
+      margin: 0;
+      padding: 0;
+
+      .wawes-icon {
+        display: none;
+      }
+
+      .desktop {
+        .sub-group {
+          flex-direction: column;
+          text-align: left;
+          justify-content: flex-end;
+
+          .wawes-icon {
+            width: 70px;
+            height: 59px;
+            margin: 0;
+            display: block;
+            padding-bottom: 36px;
+          }
+
+          .social-media-links {
+            display: flex;
+            margin: 0 0 33%;
+            padding: 0;
+            align-items: flex-start;
+
+            a {
+              padding: 0 8px 8px;
+              margin: 0;
+            }
+          }
+        }
+
+        .social-media-links {
+          display: none;
+        }
+      }
+
+      .footer-bottom p a {
+        font-size: 13px;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+
+      &-block {
+        margin-right: 0;
+        text-align: left;
+        width: 50%;
+
+        h5 {
+          margin: 10px 0;
+        }
+      }
+
+      &-spacer {
+        display: none;
+      }
+    }
+
+    &__socials-block {
+      width: 75%;
+      text-align: left;
+    }
   }
 }
