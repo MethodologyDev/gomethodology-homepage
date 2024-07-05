@@ -73,6 +73,7 @@
   border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
+  z-index: 1;
 
   .nav-trigger {
     display: none;
@@ -238,7 +239,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: 0;
   flex: 1 0 auto;
 }
 
