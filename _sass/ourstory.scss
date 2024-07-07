@@ -1,0 +1,117 @@
+.ourstory-page {
+  @include media-query($on-palm) {
+
+    .intro-video {
+      object-fit: cover;
+      position: relative;
+    }
+
+    .hero {
+      top: 0px !important;
+      position: relative;
+
+      p {
+        margin: 0px;
+      }
+
+      .hero-image {
+        height: 435px;
+        width: 100%;
+        background: url("../../assets/images/ourstory/lead-image.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 187%;
+        background-position-y: 0px;
+        box-shadow: inset 0px -126px 106px 0px #fff;
+      }
+
+      .text-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .julie-image {
+        width: 144px;
+        height: 144px;
+        background: url("../../assets/images/home/julie3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+      }
+
+      .profile {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        p {
+          margin: 0px;
+        }
+
+        .name {
+          color: #000;
+          text-align: center;
+          font-size: 24px;
+          line-height: 20px;
+        }
+
+        .position {
+          color: #000;
+          font-size: 12px;
+          line-height: 20px;
+          margin-top: 5px;
+        }
+      }
+
+      .title {
+        color: #354239;
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .description {
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 17px;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+    }
+
+    .details-section {
+      padding: 20px;
+
+      p {
+        margin: 0px;
+      }
+
+      .normal-text {
+        color: #36443A;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+
+      .large-italic {
+        color: #36443A;
+        font-size: 24px;
+        font-style: italic !important;
+        line-height: 31px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .model-image {
+      width: 100%;
+      height: 455px;
+      background: url("../../assets/images/ourstory/model.jpeg");
+      background-size: cover;
+    }
+  }
+}
