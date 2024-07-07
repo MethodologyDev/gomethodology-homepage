@@ -1,0 +1,124 @@
+.signature-page {
+  @include media-query($on-palm) {
+    .hero {
+      top: 0px !important;
+      position: relative;
+
+      .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -32px;
+        position: relative;
+        background: white;
+        box-shadow: 0px -1px 70px 70px rgb(255, 255, 255);
+      }
+
+      .title {
+        color: #354239;
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      .description {
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 17px;
+      }
+    }
+
+    .signature-features-slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 50px;
+      margin-top: 25px;
+
+      p {
+        margin: 0;
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        width: 55%;
+      }
+
+      img {
+        width: 71px;
+        height: 71px;
+      }
+
+      div {
+        margin-top: 20px;
+      }
+    }
+
+    .intro-video {
+      object-fit: cover;
+      position: relative;
+    }
+
+    .signature-program {
+      background: #C9D5C8;
+      padding-bottom: 50px;
+
+      .signature-title {
+        padding-top: 24px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 34px;
+          line-height: 41px;
+        }
+      }
+
+      .signature-desc {
+        margin-top: 12px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 15px;
+          line-height: 23px;
+        }
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        .white-btn {
+          font-size: 16px;
+          line-height: 24px;
+          background-color: #FFFBF5;
+          color: #36443a;
+          border-radius: 5px;
+          padding: 12px 35px !important;
+        }
+      }
+    }
+
+    .results-section {
+      background: #36443A;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        color: #FFFBF5;
+        text-align: center;
+        font-size: 34px;
+        line-height: 41px;
+        padding-top: 35px;
+      }
+    }
+  }
+}

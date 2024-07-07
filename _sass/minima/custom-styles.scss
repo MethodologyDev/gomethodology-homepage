@@ -50,3 +50,125 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.press {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  overflow: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  animation: move 20s infinite linear;
+
+  @keyframes move {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .wsj {
+    width: 42.412px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+
+  .rollingstone {
+    width: 101.624px;
+    flex-shrink: 0;
+  }
+
+  .forbes {
+    width: 66px;
+    flex-shrink: 0;
+  }
+
+  .womenshealth {
+    width: 110px;
+    flex-shrink: 0;
+  }
+
+  .otherimg {
+    width: 42.412px;
+    flex-shrink: 0;
+  }
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: auto;
+  column-gap: 25px;
+
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+
+    .slider-title {
+      color: #36443A;
+      text-align: center;
+      font-size: 28px;
+      line-height: normal;
+    }
+
+    .product-item {
+      background-color: #fff;
+      display: flex;
+      width: 220px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+
+      .product-image {
+        height: 190px;
+        width: 220px;
+        background: #36443A;
+        object-fit: cover;
+      }
+
+      .product-title {
+        width: 65%;
+        color: #36443A;
+        text-align: center;
+        font-size: 24px;
+        line-height: 23px;
+        margin: 12px;
+      }
+
+      .food-name p {
+        margin: 0;
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      .nutrition {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 11px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+
+  .slider-container:first-child {
+    margin-left: 20%;
+  }
+
+  .slider-container:last-child {
+    margin-right: 20%;
+  }
+}
