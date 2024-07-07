@@ -1,0 +1,375 @@
+.transformation-page {
+  @include media-query($on-palm) {
+    .intro-video {
+      object-fit: cover;
+      position: relative;
+      top: 116px;
+    }
+
+    .hero {
+      top: 0px !important;
+      position: relative;
+
+      .text-content {
+        top: -32px;
+        position: relative;
+        background: white;
+        box-shadow: 0px -1px 70px 70px rgb(255, 255, 255);
+      }
+
+      .title {
+        color: #354239;
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .description {
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 17px;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+    }
+
+    .product-showcase {
+      background: #C9D5C8;
+
+      .product-image {
+        width: 100%;
+        height: 334px;
+        background: url("../../assets/images/transformation/product-list.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 143%;
+        background-position-y: -90px;
+      }
+
+      .title {
+        color: #36443A;
+        text-align: center;
+        font-size: 34px;
+        line-height: 41px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+      }
+    }
+
+    .kitchen-image {
+      width: 100%;
+      height: 457px;
+      background: url("../../assets/images/transformation/kitchen.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: -70px;
+      position: relative;
+      top: -16px;
+    }
+
+    .variation-section {
+      padding-bottom: 50px;
+
+      .title {
+        color: #36443A;
+        text-align: center;
+        font-size: 34px;
+        line-height: 41px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .description {
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .variation-scroll {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      overflow: auto;
+      column-gap: 25px;
+      padding-bottom: 35px;
+
+      .variation-item {
+        border-radius: 20px;
+        border: 1px solid #000;
+        background-color: #C9D5C8;
+
+        p {
+          margin: 0px;
+        }
+
+        .item-flex {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 268px;
+          height: 385px;
+        }
+
+        .small-text {
+          color: #36443A;
+          text-align: center;
+          font-size: 18px;
+          line-height: 38px;
+          text-transform: capitalize;
+        }
+
+        .large-text {
+          color: #36443A;
+          font-size: 32px;
+          line-height: 38px;
+          text-transform: capitalize;
+        }
+
+        .option {
+          background: #36443A;
+          border-radius: 5px;
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          padding: 10px;
+
+          .right-col {
+            width: 40%;
+          }
+
+          .left-col {
+            width: 60%;
+          }
+
+          .col-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .days {
+              color: #C9D5C8;
+              font-size: 20px;
+              line-height: 23px;
+            }
+
+            .occurrence {
+              color: #C9D5C8;
+              text-align: center;
+              font-size: 15px;
+              line-height: 23px;
+            }
+
+            .food-detail {
+              color: #C9D5C8;
+              text-align: center;
+              font-size: 12px;
+              line-height: 19px;
+              text-transform: capitalize;
+            }
+
+            .food-detail-bold {
+              color: #C9D5C8;
+              font-size: 12px;
+              line-height: 19px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+
+      .variation-item:first-child {
+        margin-left: 20%;
+      }
+
+      .variation-item:last-child {
+        margin-right: 20%;
+      }
+    }
+
+    .makeover-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #9CC196;
+
+      p {
+        margin: 0px;
+      }
+
+      .intro-img {
+        width: 100%;
+        height: 441px;
+        background: url("../../assets/images/transformation/bento.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: -464px;
+        background-size: 344%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        .title {
+          margin: 0px;
+          color: #36443A;
+          text-align: center;
+          font-size: 28px;
+          line-height: 41px;
+          width: 80%;
+          margin-bottom: 10px;
+        }
+      }
+
+      .description {
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        margin: 0px;
+        width: 76%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+
+      .bubble-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 19px;
+
+        .badge {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          border-radius: 100px;
+          background-color: #C9D5C8;
+          width: 40px;
+          height: 40px;
+          color: #36443A;
+          text-align: center;
+          font-size: 25px;
+          line-height: 135%;
+          left: 25px;
+          top: -13px;
+          border: 1px solid #36443A;
+        }
+
+        .bubble-container {
+          border-radius: 17px;
+          border: 1px solid #000;
+          background: #C9D5C8;
+          width: 76%;
+          height: fit-content;
+          align-self: center;
+
+          .text-content {
+            color: #354439;
+            font-size: 15px;
+            line-height: 22px;
+            padding-left: 24px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 11px;
+          }
+        }
+      }
+    }
+
+    .makeover-section .bubble-wrapper:nth-of-type(3) .bubble-container {
+      align-self: flex-end;
+      margin-right: 32px;
+      width: 70%;
+    }
+
+    .makeover-section .bubble-wrapper:nth-of-type(3) .badge {
+      left: 17%;
+    }
+
+    .makeover-section .bubble-wrapper:nth-of-type(4) .bubble-container {
+      align-self: flex-start;
+      margin-right: 32px;
+    }
+
+    .makeover-section .bubble-wrapper:nth-of-type(4) {
+      width: 80%;
+    }
+
+    .makeover-section .bubble-wrapper:nth-of-type(4) .badge {
+      left: -6%;
+    }
+
+    .signature-program {
+      background: #C9D5C8;
+      padding-bottom: 50px;
+
+      .signature-title {
+        padding-top: 24px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 34px;
+          line-height: 41px;
+        }
+      }
+
+      .signature-desc {
+        margin-top: 12px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 15px;
+          line-height: 23px;
+        }
+      }
+    }
+
+    .results-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      background: url("../../assets/images/transformation/kitchen-2.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: -189px;
+    }
+
+    .results-section {
+      background: #36443A;
+      padding-bottom: 30px;
+      position: relative;
+      top: -10px;
+
+      p {
+        margin: 0px;
+      }
+
+      .title {
+        color: #FFFBF5;
+        text-align: center;
+        font-size: 34px;
+        line-height: 41px;
+        padding-top: 35px;
+      }
+    }
+  }
+}
