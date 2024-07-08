@@ -122,6 +122,7 @@
       text-align: center;
       font-size: 28px;
       line-height: normal;
+      @include font-larken(400);
     }
 
     .product-item {
@@ -146,6 +147,7 @@
         font-size: 24px;
         line-height: 23px;
         margin: 12px;
+        @include font-larken(400);
       }
 
       .food-name p {
@@ -154,6 +156,7 @@
         text-align: center;
         font-size: 15px;
         line-height: 22px;
+        @include font-poppins(400);
       }
 
       .nutrition {
@@ -171,6 +174,7 @@
           text-align: center;
           font-size: 11px;
           line-height: 17px;
+          @include font-poppins(400);
         }
       }
     }

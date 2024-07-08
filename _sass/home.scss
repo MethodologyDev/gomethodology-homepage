@@ -32,7 +32,7 @@
             line-height: 32px;
             margin: 0;
             padding: 0;
-            // .font-larken(400)
+            @include font-larken(400);
           }
         }
 
@@ -46,7 +46,7 @@
             line-height: 23px;
             text-align: center;
             margin: 0;
-            // .font-poppins(400);
+            @include font-poppins(400);
           }
         }
       }
@@ -86,6 +86,7 @@
       text-align: center;
       line-height: 38px;
       color: $darkColor;
+      @include font-larken(400);
     }
 
     .benefit-list-wrapper {
@@ -100,6 +101,7 @@
 
         p {
           font-size: 18px;
+          @include font-poppins(500);
           line-height: 25px;
           color: $darkColor;
         }
@@ -129,6 +131,7 @@
         text-align: center;
         font-size: 34px;
         line-height: 41px;
+        @include font-larken(400);
       }
     }
 
@@ -141,6 +144,7 @@
         text-align: center;
         font-size: 15px;
         line-height: 23px;
+        @include font-poppins(400);
       }
     }
 
@@ -150,6 +154,7 @@
       text-align: center;
       font-size: 34px;
       line-height: 41px;
+      @include font-larken(400);
     }
 
     .program {
@@ -178,11 +183,13 @@
     .program-title {
       color: $darkColor;
       font-size: 5vw;
+      @include font-larken(400);
     }
 
     .program-desc {
       color: $darkColor;
       font-size: 3vw;
+      @include font-poppins(400);
     }
 
     .tell-more {
@@ -191,6 +198,8 @@
       color: $darkColor;
       font-size: 0.75rem;
       font-style: italic;
+      line-height: 23px;
+      @include font-poppins(400);
     }
 
     .arrow-right {
@@ -235,6 +244,7 @@
       line-height: 1.1875rem;
       text-transform: capitalize;
       padding-bottom: 10px;
+      @include font-larken(400);
     }
 
     .zip-code {
@@ -245,6 +255,7 @@
       line-height: 125%;
       padding-top: 2px;
       align-self: center;
+      @include font-poppins(400);
     }
 
     .zip-code-input {
@@ -253,6 +264,7 @@
       display: inline-flex;
       width: 90%;
       margin-top: 11px;
+      @include font-poppins(400);
     }
 
     .btn-wrapper {
@@ -277,6 +289,7 @@
     font-style: normal;
     line-height: 41px;
     margin-top: 5px;
+    @include font-larken(400);
   }
 
   .images-ingredients {
@@ -322,6 +335,7 @@
       font-style: normal;
       line-height: 41px;
       margin-bottom: 20px;
+      @include font-larken(400);
     }
 
     .planet-details {
@@ -344,6 +358,7 @@
         width: 60%;
         font-size: 13px;
         margin-left: 17px;
+        @include font-poppins(400);
       }
     }
 
@@ -377,6 +392,7 @@
         color: #36443A;
         font-size: 34px;
         line-height: 41px;
+        @include font-larken(400);
       }
     }
 
@@ -392,6 +408,7 @@
         font-size: 15px;
         font-weight: 400;
         line-height: 20px;
+        @include font-poppins(400);
 
         p {
           margin: 0;
@@ -413,6 +430,7 @@
           text-align: center;
           font-size: 15px;
           line-height: 19px;
+          @include font-poppins(600);
         }
       }
     }
@@ -448,6 +466,7 @@
         text-align: center;
         font-size: 34px;
         line-height: 41px;
+        @include font-larken(400);
       }
 
       .footer-text {
@@ -456,6 +475,7 @@
         font-size: 12px;
         line-height: 120%;
         text-decoration-line: underline;
+        @include font-poppins(600);
       }
     }
   }
@@ -472,6 +492,7 @@
       font-size: 34px;
       line-height: 41px;
       margin-top: 50px;
+      @include font-larken(400);
     }
 
     .row-container {
@@ -491,6 +512,7 @@
           font-size: 22px;
           line-height: 23px;
           text-transform: uppercase;
+          @include font-poppins(600);
         }
 
         .number-style {
@@ -498,6 +520,7 @@
           text-align: center;
           font-size: 48px;
           line-height: 56px;
+          @include font-poppins(400);
         }
 
         .value-style {
@@ -505,6 +528,7 @@
           text-align: center;
           font-size: 24px;
           line-height: 27px;
+          @include font-poppins(400);
         }
       }
     }
@@ -542,6 +566,7 @@
       text-align: center;
       font-size: 34px;
       line-height: 41px;
+      @include font-larken(400);
     }
 
     .name {
@@ -550,12 +575,14 @@
       font-size: 22px;
       line-height: 23px;
       margin-bottom: 12px;
+      @include font-larken(400);
     }
 
     .position {
       color: #36443A;
       font-size: 18px;
       line-height: 23px;
+      @include font-larken(400);
     }
 
     .about-text {
@@ -564,6 +591,7 @@
       text-align: center;
       font-size: 12px;
       line-height: 23px;
+      @include font-poppins(400);
     }
   }
 
@@ -583,6 +611,7 @@
       text-align: center;
       font-size: 34px;
       line-height: 41px;
+      @include font-larken(400);
     }
 
     .description {
@@ -593,6 +622,7 @@
       padding-left: 40px;
       padding-right: 40px;
       margin-bottom: 10px;
+      @include font-poppins(400);
     }
 
     .email-wrapper {
@@ -611,6 +641,7 @@
       padding: 14px 16px;
       align-items: center;
       column-gap: 10px;
+      @include font-poppins(400);
     }
 
     .sm-icon-container {
