@@ -293,3 +293,40 @@ table {
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Light.ttf') format('woff2'),
+      url('/assets/fonts/Poppins-Light.ttf') format('woff'),
+      url('/assets/fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.ttf') format('woff2'),
+      url('/assets/fonts/Poppins-Regular.ttf') format('woff'),
+      url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Medium.ttf') format('woff2'),
+      url('/assets/fonts/Poppins-Medium.ttf') format('woff'),
+      url('/assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Larken';
+  src: url('/assets/fonts/Larken-Regular.otf') format('woff2'),
+      url('/assets/fonts/Larken-Regular.otf') format('woff'),
+      url('/assets/fonts/Larken-Regular.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
