@@ -28,7 +28,7 @@
   float: left;
 
   @include media-query($on-palm) {
-    padding-right: 45px;
+    padding-right: 10px;
     width: 65%;
   }
 
@@ -41,7 +41,8 @@
 .methodology-logo {
   @include media-query($on-palm) {
     padding-right: 45px;
-    margin-left: 100px;
+    margin-left: 70px;
+    margin-bottom: 10px;
   }
 }
 
@@ -67,10 +68,7 @@
 }
 
 .site-nav {
-  position: absolute;
-  top: 80px;
   background-color: $background-color;
-  border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
   z-index: 1;
@@ -87,9 +85,9 @@
     padding-top: 10px;
     text-align: center;
 
-    > svg path {
-      fill: $border-color-03;
-    }
+    // > svg path {
+    //   fill: #FFFBF5;
+    // }
   }
 
   label[for="nav-trigger"] {
@@ -99,16 +97,90 @@
     height: 36px;
     z-index: 2;
     cursor: pointer;
+    @include media-query($on-palm) {
+      float: left;
+      margin-top: 5px;
+    }
   }
+
+  .open-menu {
+    margin-top: 50px;
+    margin-left: 25px;
+    @include media-query($on-palm) {
+      float: left;
+    }
+  }
+
+  .open-menu-item {
+    @include media-query($on-palm) {
+      margin-top: 120px;
+      .menu {
+        width: 250px;
+        background-color: #34495e;
+        padding: 20px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+      .menu-item {
+        margin-bottom: 15px;
+      }
+      .menu-item h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+      }
+      .menu-item a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .toggle-input {
+        display: none;
+      }
+      .toggle-label {
+        cursor: pointer;
+      }
+      .submenu {
+        display: none;
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+      .toggle-input:checked ~ .submenu {
+        display: block;
+      }
+      .submenu-item {
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+      .arrow {
+        display: inline-block;
+        margin-left: 5px;
+        transition: transform 0.3s;
+      }
+      .toggle-input:checked ~ .toggle-label .arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
 
   input ~ .trigger {
     clear: both;
     display: none;
+    z-index: 1;
+    position: absolute;
   }
 
   input:checked ~ .trigger {
     display: block;
     padding-bottom: 5px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 5px;
+    left: 0px;
+    background-color: #36443A;
   }
 
   .page-link {
@@ -122,6 +194,50 @@
       margin-right: 0;
     }
     margin-left: 20px;
+  }
+
+  .page-link-open {
+    color: $text-color;
+    line-height: $base-line-height;
+    display: block;
+    padding: 5px 10px;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    margin-left: 20px;
+    @include media-query($on-palm) {
+      text-align: start;
+      color: #FFFBF5;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+    }
+  }
+
+  .page-link-submenu {
+    color: $text-color;
+    line-height: $base-line-height;
+    display: block;
+    padding: 5px 10px;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    margin-left: 20px;
+    @include media-query($on-palm) {
+      text-align: start;
+      color: #FFFBF5;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: 0.8px;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
