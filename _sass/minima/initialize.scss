@@ -43,13 +43,13 @@ $on-large:         $on-laptop !default;
 
 @mixin font-larken($font-weight) {
   font-family: 'Larken', 'Albra', sans-serif !important;
-  font-weight: $base-font-weight !important;
+  font-weight: $font-weight !important;
   font-style: normal;
 }
 
 @mixin font-poppins($font-weight) {
   font-family: 'Poppins', 'Helvetica Neue', sans-serif !important;
-  font-weight: $base-font-weight !important;
+  font-weight: $font-weight !important;
   font-style: normal;
 }
 
