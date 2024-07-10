@@ -82,103 +82,7 @@ permalink: /signature
     <p>High-protein, high-fiber, calorie-controlled </p>
     <p>menus that look-and taste-gourmet</p>
   </div>
-  <div class="slider-wrapper">
-    <div class="slider-container">
-      <p class="slider-title">Seafood + Vegan</p>
-      <div class="product-item">
-        <img class="product-image" src="../../assets/images/slider/seafood.png" />
-        <p class="product-title">Breakfast</p>
-        <div class="food-name">
-          <p>Mediterranean</p>
-          <p>Scrambled Egg Whites</p>
-        </div>
-        <div class="nutrition">
-          <div class="nutrition-item">
-            <p>284</p>
-            <p>Cal</p>
-          </div>
-          <div>
-            <p>32g</p>
-            <p>Protein</p>
-          </div>
-          <div>
-            <p>6g</p>
-            <p>Fiber</p>
-          </div>
-          <div>
-            <p>18g</p>
-            <p>Carbs</p>
-          </div>
-          <div>
-            <p>9g</p>
-            <p>Fat</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slider-container">
-      <p class="slider-title">Meat + Vegan</p>
-      <div class="product-item">
-        <img class="product-image" src="../../assets/images/slider/vegan1.jpeg" />
-        <p class="product-title">Organic Ceremonial Matcha</p>
-        <div class="nutrition">
-          <div class="nutrition-item">
-            <p>284</p>
-            <p>Cal</p>
-          </div>
-          <div>
-            <p>32g</p>
-            <p>Protein</p>
-          </div>
-          <div>
-            <p>6g</p>
-            <p>Fiber</p>
-          </div>
-          <div>
-            <p>18g</p>
-            <p>Carbs</p>
-          </div>
-          <div>
-            <p>9g</p>
-            <p>Fat</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slider-container">
-      <p class="slider-title">Seafood + Vegan</p>
-      <div class="product-item">
-        <img class="product-image" src="../../assets/images/slider/seafood.png" />
-        <p class="product-title">Breakfast</p>
-        <div class="food-name">
-          <p>Mediterranean</p>
-          <p>Scrambled Egg Whites</p>
-        </div>
-        <div class="nutrition">
-          <div class="nutrition-item">
-            <p>284</p>
-            <p>Cal</p>
-          </div>
-          <div>
-            <p>32g</p>
-            <p>Protein</p>
-          </div>
-          <div>
-            <p>6g</p>
-            <p>Fiber</p>
-          </div>
-          <div>
-            <p>18g</p>
-            <p>Carbs</p>
-          </div>
-          <div>
-            <p>9g</p>
-            <p>Fat</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {%- include meal-slider.html -%}
   <div class="btn-wrapper">
     <a href="{{ site.baseurl }}/#zipcode" rel="noopener noreferrer" target="_blank">
       <span class="uppercase white-btn btn-style">
@@ -194,7 +98,7 @@ permalink: /signature
   <p class="title">
     Results Without the Suffering
   </p>
-  <section>
+  <section class="slider-section">
     {%- include testimonial-dark.html -%}
   </section>
   <div class="green-button">
