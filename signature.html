@@ -2,7 +2,7 @@
 
 layout: signature
 title: Signature Program
-permalink: /signature/
+permalink: /signature
 ---
 
 <section class="hero">
@@ -18,7 +18,7 @@ permalink: /signature/
       and shockingly satisfying
     </p>
     <div class="green-button">
-      <a href="https://app.gomethodology.com/onramp/sign-up" rel="noopener noreferrer" target="_blank">
+      <a href="{{ site.baseurl }}/#zipcode" rel="noopener noreferrer">
         <span class="uppercase">
           order now
         </span>
@@ -50,7 +50,7 @@ permalink: /signature/
   <p>Packaged in reusable glass jars and bentos</p>
 
   <div class="green-button">
-    <a href="https://app.gomethodology.com/onramp/sign-up" rel="noopener noreferrer" target="_blank">
+    <a href="{{ site.baseurl }}/#zipcode" rel="noopener noreferrer">
       <span class="uppercase">
         order now
       </span>
@@ -170,7 +170,7 @@ permalink: /signature/
     </div>
   </div>
   <div class="btn-wrapper">
-    <a href="https://app.gomethodology.com/onramp/sign-up" rel="noopener noreferrer" target="_blank">
+    <a href="{{ site.baseurl }}/#zipcode" rel="noopener noreferrer" target="_blank">
       <span class="uppercase white-btn btn-style">
         <span>order now</span>
       </span>
@@ -184,39 +184,11 @@ permalink: /signature/
   <p class="title">
     Results Without the Suffering
   </p>
-  <section class="testimonial-section-dark" id="testimonialsSlider">
-    <div class="testimonial-section-dark__inner">
-      <div class="sixth">
-        <div class="sixth__testimonials">
-          <div class="sixth__testimonials-control xs-hidden">
-            <!-- <svg class="slide-left" width="57" height="35" viewBox="0 0 57 35" fill="#ffff"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.0525 34.105L19.3751 31.8028L6.25461 18.6824L56.4136 18.6824V15.4226L6.25461 15.4226L19.3751 2.30217L17.0525 -1.52588e-05L-7.62939e-06 17.0525L17.0525 34.105Z" />
-            </svg>
-            <svg class="slide-right" width="57" height="35" viewBox="0 0 57 35" fill="#ffff"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M39.9475 0L37.6249 2.30219L50.7454 15.4226L0.586426 15.4226L0.586426 18.6824L50.7454 18.6824L37.6249 31.8028L39.9475 34.105L57 17.0525L39.9475 0Z" />
-            </svg> -->
-          </div>
-          <div class="sixth__testimonials-wrap slider-body">
-            <!-- <squarespace:query collection="new-testimonials" limit="50">
-              {.repeated section items}
-              <div class="sixth__testimonial">
-                <div class="sixth__testimonial-body xs-nobr">
-                  {.section body} {@} {.end}
-                </div>
-              </div>
-              {.end}
-            </squarespace:query> -->
-          </div>
-        </div>
-      </div>
-    </div>
+  <section>
+    {%- include testimonial-dark.html -%}
   </section>
   <div class="green-button">
-    <a href="https://app.gomethodology.com/onramp/sign-up" rel="noopener noreferrer" target="_blank">
+    <a href="{{ site.baseurl }}/#zipcode" rel="noopener noreferrer" target="_blank">
       <span class="uppercase">
         order now
       </span>

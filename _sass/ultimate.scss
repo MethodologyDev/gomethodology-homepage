@@ -42,6 +42,7 @@
               line-height: 32px;
               margin: 0;
               padding: 0;
+              @include font-larken(400);
             }
           }
 
@@ -55,6 +56,7 @@
               font-size: 14px;
               line-height: 21px;
               margin: 0;
+              @include font-poppins(400);
             }
           }
         }
@@ -100,6 +102,7 @@
         text-align: center;
         line-height: 38px;
         color: $darkColor;
+        @include font-larken(400);
       }
 
       .benefit-list-wrapper {
@@ -116,6 +119,7 @@
             font-size: 15px;
             line-height: 22px;
             color: $darkColor;
+            @include font-poppins(400);
           }
         }
       }
@@ -142,6 +146,7 @@
         text-align: center;
         line-height: 38px;
         color: $darkColor;
+        @include font-larken(400);
       }
 
       .benefit-list-wrapper {
@@ -163,6 +168,7 @@
             line-height: 25px;
             color: $darkColor;
             width: 70%;
+            @include font-poppins(400);
           }
         }
 
@@ -209,6 +215,7 @@
         text-align: center;
         font-size: 34px;
         line-height: 41px;
+        @include font-larken(400);
       }
 
       .large-text {
@@ -216,12 +223,14 @@
         text-align: center;
         font-size: 48px;
         line-height: 35px;
+        @include font-larken(400);
       }
 
       .medium-text {
         color: #FFF;
         font-size: 24px;
         line-height: 27px;
+        @include font-larken(400);
       }
 
       .footer-text {
@@ -229,6 +238,7 @@
         text-align: center;
         font-size: 32px;
         line-height: 33px;
+        @include font-larken(400);
       }
     }
 
@@ -249,6 +259,7 @@
           text-align: center;
           font-size: 34px;
           line-height: 41px;
+          @include font-larken(400);
         }
       }
 
@@ -261,6 +272,7 @@
           text-align: center;
           font-size: 15px;
           line-height: 23px;
+          @include font-poppins(400);
         }
       }
 
@@ -465,6 +477,7 @@
         font-size: 34px;
         font-style: normal;
         line-height: 41px;
+        @include font-larken(400);
       }
 
       .planet-details {
@@ -487,6 +500,7 @@
           width: 60%;
           font-size: 13px;
           margin-left: 17px;
+          @include font-poppins(400);
         }
       }
     }
@@ -512,6 +526,7 @@
         line-height: 41px;
         margin: 0px;
         padding-top: 40px;
+        @include font-larken(400);
       }
 
       .lose-weight-section {

@@ -310,26 +310,26 @@
 
 .testimonial-section-dark {
   &__inner {
-    width: 100%;
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 
     .food-items {
-      min-height: 434px;
+      flex-basis: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-position: center;
       overflow: hidden;
-      width: 100%;
-      flex-basis: 100%;
 
       video {
         position: relative;
         top: 10%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -48%);
       }
     }
 
     .sixth {
-      flex-basis: 100%;
-      width: 100%;
+      flex-basis: 50%;
       background-color: #36443A;
       overflow: hidden;
       margin: 0 auto;
@@ -344,24 +344,21 @@
 
       &__testimonials {
         &-control {
-          display: flex !important;
-          width: 89%;
-          margin: 0 auto;
-          top: calc(25%);
-          padding-left: 5%;
+          width: 73%;
+          padding-left: 12.5%;
+          top: calc(16%);
 
           svg {
             width: 18px;
+            cursor: pointer;
           }
         }
 
         &-dots {
+          margin-top: 30px;
           display: flex !important;
           align-items: center !important;
           justify-content: center !important;
-          width: 15%;
-          height: 15%;
-          margin: 30px auto;
 
           div {
             display: block;
@@ -389,6 +386,15 @@
           color: #fff;
           margin-top: 24px;
           @include font-poppins(400);
+
+          &::after {
+            content: "_";
+            display: block;
+            margin: 4px auto 26px auto;
+            font-size: 50px;
+            color: $darkColor;
+            font-weight: 200;
+          }
         }
 
         .author-name {
