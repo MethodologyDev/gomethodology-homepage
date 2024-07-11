@@ -1,4 +1,4 @@
-<div class="slider-wrapper">
+<div class="slider-wrapper" id="main-slider">
   <div class="slider-container">
     <p class="slider-title">Seafood + Vegan</p>
     <div class="product-item">
@@ -95,3 +95,52 @@
     </div>
   </div>
 </div>
+
+<div class="scroll-view">
+  <div id="scroll-element" class="scroll-container">
+    <div class="content2">
+      <div class="scroll-item"></div>
+      <div class="scroll-item"></div>
+      <div class="scroll-item"></div>
+      <div class="scroll-item"></div>
+      <div class="scroll-item"></div>
+      <div class="scroll-item"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function syncScroll(event) {
+    var sourceElement = event.target;
+    var targetElement = (sourceElement.id === 'main-slider') ? document.getElementById('scroll-element') : document.getElementById('main-slider');
+    targetElement.scrollLeft = sourceElement.scrollLeft;
+  }
+
+  document.getElementById('main-slider').addEventListener('scroll', syncScroll);
+  document.getElementById('main-slider').addEventListener('scroll', syncScroll);
+
+</script>
+
+<style>
+  .scroll-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .scroll-container {
+    height: 4px;
+    width: 50%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom: 1px solid #36443A;
+    margin-top: 22px;
+    scrollbar-color: #36443A;
+  }
+  .scroll-item {
+    display: inline-block;
+    width: 100px;
+    height: 0px;
+    margin-right: 10px;
+  }
+</style>
