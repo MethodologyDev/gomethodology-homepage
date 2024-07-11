@@ -10,6 +10,10 @@
   border-radius: 5px;
   background: #C9D5C8;
 
+  a {
+    text-decoration: none !important;
+  }
+
   span {
     color: #36443A;
     text-align: center;
@@ -38,6 +42,7 @@
 
   a {
     color: #36443a;
+    text-decoration: none !important;
   }
 }
 
