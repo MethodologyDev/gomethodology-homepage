@@ -213,10 +213,13 @@ pre {
 
 //
 .header-wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit * .5;
+  // max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  // margin-right: auto;
+  // margin-left: auto;
+  // padding-right: $spacing-unit * .5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-left: $spacing-unit * .5;
   @extend %clearfix;
 
