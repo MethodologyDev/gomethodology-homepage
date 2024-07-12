@@ -1,0 +1,116 @@
+.faq-page {
+  @include media-query($on-palm) {
+    .hero {
+      height: 562px;
+      width: 100%;
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/faq/lead.png");
+      background-position-x: -75px;
+      background-size: 187%;
+      background-repeat: no-repeat;
+    }
+
+    .title-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        color: #36443A;
+        text-align: center;
+        font-size: 34px;
+        @include font-larken(400);
+      }
+    }
+
+    .faq-section {
+      margin-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      hr {
+        margin-top: 10px;
+      }
+
+      .accordion-item {
+        .accordion-toggle {
+          display: none;
+        }
+
+        .item {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+
+          .title {
+            margin: 0px;
+            color: #36443A;
+            font-size: 20px;
+            font-style: normal;
+            line-height: normal;
+            @include font-larken(400);
+          }
+
+          .icon-minus {
+            display: none;
+          }
+        }
+
+        .submenu {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+          margin-top: 10px;
+          padding-left: 20px;
+
+          .submenu-item {
+            margin-bottom: 8px;
+            font-size: 12px;
+            @include font-poppins(400)
+          }
+        }
+
+        .accordion-toggle:checked {
+          &+.item {
+            .icon-plus {
+              display: none;
+            }
+
+            .icon-minus {
+              display: block;
+            }
+          }
+
+          &~.submenu {
+            max-height: 1000px;
+            /* Adjust this value based on your content */
+            transition: max-height 0.5s ease-in;
+          }
+        }
+      }
+    }
+
+    .journey-section {
+      background: #C1D2C1;
+      p {
+        padding-top: 33px;
+        text-align: center;
+        color: #36443A;
+        font-size: 32px;
+        line-height: 45px;
+        padding-left: 70px;
+        padding-right: 70px;
+        @include font-larken(400);
+      }
+      .product-image {
+        height: 500px;
+        width: 100%;
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/faq/product.png");
+        background-position-y: 65px;
+        background-position-x: -138px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
