@@ -28,8 +28,8 @@
   float: left;
 
   @include media-query($on-palm) {
-    padding-right: 10px;
-    width: 65%;
+    // padding-right: 10px;
+    // width: 65%;
   }
 
   &,
@@ -41,7 +41,7 @@
 .methodology-logo {
   @include media-query($on-palm) {
     padding-right: 45px;
-    margin-left: 70px;
+    margin-left: 80px;
     margin-bottom: 10px;
   }
 }
@@ -99,7 +99,7 @@
     cursor: pointer;
     @include media-query($on-palm) {
       float: left;
-      margin-top: 5px;
+      // margin-top: 5px;
     }
   }
 
