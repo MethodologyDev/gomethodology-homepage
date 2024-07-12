@@ -1,0 +1,263 @@
+.careers-page {
+  @include media-query($on-palm) {
+    .hero {
+      height: 419px;
+      width: 100%;
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/lead.jpeg");
+      background-position-x: -125px;
+      background-size: 183%;
+      background-repeat: no-repeat;
+      background-position-y: -103px;
+    }
+
+    .title-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 17px;
+
+      p {
+        color: #36443A;
+        text-align: center;
+        font-size: 34px;
+        @include font-larken(400);
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 18px;
+      }
+    }
+
+    .faq-section {
+      margin-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      hr {
+        margin-top: 10px;
+      }
+
+      .accordion-item {
+        .accordion-toggle {
+          display: none;
+        }
+
+        .item {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+
+          .title {
+            margin: 0px;
+            color: #36443A;
+            font-size: 20px;
+            font-style: normal;
+            line-height: normal;
+            @include font-larken(400);
+          }
+
+          .icon-minus {
+            display: none;
+          }
+        }
+
+        .submenu {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+          margin-top: 10px;
+          padding-left: 20px;
+
+          .submenu-item {
+            margin-bottom: 8px;
+            font-size: 12px;
+            @include font-poppins(400)
+          }
+        }
+
+        .accordion-toggle:checked {
+          &+.item {
+            .icon-plus {
+              display: none;
+            }
+
+            .icon-minus {
+              display: block;
+            }
+          }
+
+          &~.submenu {
+            max-height: 1000px;
+            /* Adjust this value based on your content */
+            transition: max-height 0.5s ease-in;
+          }
+        }
+      }
+    }
+
+    .journey-section {
+      background: #C1D2C1;
+
+      p {
+        padding-top: 33px;
+        text-align: center;
+        color: #36443A;
+        font-size: 32px;
+        line-height: 45px;
+        padding-left: 70px;
+        padding-right: 70px;
+        @include font-larken(400);
+      }
+
+      .product-image {
+        height: 500px;
+        width: 100%;
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/faq/product.png");
+        background-position-y: 65px;
+        background-position-x: -138px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .medium-text {
+      margin-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      p {
+        color: #36443A;
+        font-size: 12px;
+        line-height: 178%;
+        @include font-poppins(400);
+      }
+    }
+
+    .large-text {
+      padding-left: 40px;
+      padding-right: 40px;
+
+      p {
+        color: #36443A;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        @include font-larken(400);
+      }
+    }
+
+    .image-1 {
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image1.png");
+      height: 274px;
+      width: 100%;
+      background-size: 100%;
+      background-position-y: -40px;
+    }
+
+    .image-2 {
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image2.png");
+      width: 100%;
+      height: 418px;
+      background-size: 100%;
+      background-position-y: -40px;
+    }
+
+    .accordion-section {
+      margin-top: 20px;
+
+      .header-title {
+        color: #36443A;
+        font-family: Larken;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 138%;
+        padding-left: 40px;
+        padding-right: 40px;
+        @include font-larken(400);
+      }
+    }
+
+    .text-container {
+      margin-top: 20px;
+    }
+
+    .button-container {
+      padding-bottom: 50px;
+    }
+
+    .opportunity-section {
+      margin-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      hr {
+        margin-top: 10px;
+      }
+
+      .accordion-item {
+        .accordion-toggle {
+          display: none;
+        }
+
+        .item {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+
+          .title {
+            margin: 0px;
+            color: #36443A;
+            font-size: 20px;
+            font-style: normal;
+            line-height: normal;
+            @include font-larken(400);
+          }
+
+          .icon-minus {
+            display: none;
+          }
+        }
+
+        .submenu {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+          margin-top: 10px;
+          padding-left: 20px;
+
+          .submenu-item {
+            margin-bottom: 8px;
+            font-size: 12px;
+            @include font-poppins(400)
+          }
+        }
+
+        .accordion-toggle:checked {
+          &+.item {
+            .icon-plus {
+              display: none;
+            }
+
+            .icon-minus {
+              display: block;
+            }
+          }
+
+          &~.submenu {
+            max-height: 1000px;
+            /* Adjust this value based on your content */
+            transition: max-height 0.5s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
