@@ -214,9 +214,9 @@
   }
 
   .transformation-section {
-    box-shadow: inset 0px -230px 20px 0px #36443A;
+    box-shadow: inset 0px -280px 47px 0px #36443A;
     background: url(../../assets/images/home/start-transformation.jpeg);
-    min-height: 621px;
+    height: 661px;
     padding: 36px 37px;
     position: relative;
     top: 0;
@@ -229,6 +229,9 @@
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
+    background-position-y: 0px;
+    background-size: 180%;
+    background-position-x: -139px;
 
     .title {
       display: flex;
