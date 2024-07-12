@@ -1,7 +1,18 @@
+<div class="slider-wrapper slider-header">
+  <div class="slider-container">
+    <p class="slider-title" data-index="0">Seafood + Vegan</p>
+  </div>
+  <div class="slider-container">
+    <p class="slider-title" data-index="1">Meat + Vegan</p>
+  </div>
+  <div class="slider-container">
+    <p class="slider-title" data-index="2">Seafood + Vegan</p>
+  </div>
+</div>
+
 <div class="slider-wrapper" id="main-slider">
   <div class="slider-container">
-    <p class="slider-title">Seafood + Vegan</p>
-    <div class="product-item">
+    <div class="product-item" data-index="0">
       <img class="product-image" src="./assets/images/slider/seafood.png" />
       <p class="product-title">Breakfast</p>
       <div class="food-name">
@@ -33,8 +44,7 @@
     </div>
   </div>
   <div class="slider-container">
-    <p class="slider-title">Meat + Vegan</p>
-    <div class="product-item">
+    <div class="product-item" data-index="1">
       <img class="product-image" src="./assets/images/slider/vegan1.jpeg" />
       <p class="product-title">Organic Ceremonial Matcha</p>
       <div class="nutrition">
@@ -62,8 +72,7 @@
     </div>
   </div>
   <div class="slider-container">
-    <p class="slider-title">Seafood + Vegan</p>
-    <div class="product-item">
+    <div class="product-item" data-index="2">
       <img class="product-image" src="./assets/images/slider/seafood.png" />
       <p class="product-title">Breakfast</p>
       <div class="food-name">
@@ -121,6 +130,32 @@
 
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sliderTitles = document.querySelectorAll('.slider-title');
+    const mainSlider = document.getElementById('main-slider');
+    const productItems = mainSlider.querySelectorAll('.product-item');
+
+    sliderTitles.forEach(title => {
+      title.addEventListener('click', function () {
+        const index = this.getAttribute('data-index');
+        const targetProduct = mainSlider.querySelector(`.product-item[data-index="${index}"]`);
+
+        if (targetProduct) {
+          const containerRect = mainSlider.getBoundingClientRect();
+          const targetRect = targetProduct.getBoundingClientRect();
+          const scrollLeft = targetRect.left - containerRect.left - (containerRect.width / 2) + (targetRect.width / 2);
+
+          mainSlider.scrollTo({
+            left: mainSlider.scrollLeft + scrollLeft,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+</script>
+
 <style>
   .scroll-view {
     display: flex;
@@ -128,6 +163,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .scroll-container {
     height: 4px;
     width: 50%;
@@ -137,10 +173,12 @@
     margin-top: 22px;
     scrollbar-color: #36443A;
   }
+
   .scroll-item {
     display: inline-block;
     width: 100px;
     height: 0px;
     margin-right: 10px;
   }
+
 </style>

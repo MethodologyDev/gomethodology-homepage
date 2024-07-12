@@ -141,6 +141,10 @@
   }
 }
 
+.slider-header {
+  margin-top: 30px;
+}
+
 .slider-wrapper {
   display: flex;
   flex-direction: row;
@@ -159,6 +163,7 @@
       text-align: center;
       font-size: 28px;
       line-height: normal;
+      width: max-content;
       @include font-larken(400);
     }
 
