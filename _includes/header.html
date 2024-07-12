@@ -28,13 +28,10 @@
           </span>
         </label>
         <div class="open-menu-item">
-          <!-- {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-              <a class="page-link-open" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-            {%- endfor -%} -->
-          <a class="page-link-open" href="/">Home</a>
+          <div class="nav-menu-item">
+            <a class="page-link-open" href="/">Home</a>
+            <hr />
+          </div>
           <div class="menu-item">
             <input type="checkbox" id="programs-toggle" class="toggle-input">
             <label for="programs-toggle" class="toggle-label">
@@ -71,9 +68,16 @@
                 </a>
               </div>
             </div>
+            <hr />
           </div>
-          <a class="page-link-open" href="{{ site.baseurl }}/ourstory">Our Story</a>
-          <a class="page-link-open" href="{{ site.baseurl }}/sign-in" target="_blank">Log-in</a>
+          <div class="nav-menu-item">
+            <a class="page-link-open" href="{{ site.baseurl }}/ourstory">Our Story</a>
+            <hr />
+          </div>
+          <div class="nav-menu-item">
+            <a class="page-link-open" href="{{ site.baseurl }}/sign-in" target="_blank">Log-in</a>
+            <hr />
+          </div>
         </div>
       </div>
     </nav>
