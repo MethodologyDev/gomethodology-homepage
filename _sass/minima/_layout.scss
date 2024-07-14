@@ -4,7 +4,8 @@
   padding: 0px;
   background-color: #a7c194;
   text-align: center;
-  color: $font-color
+  color: $font-color;
+  text-transform: uppercase;
 }
 
 /**
@@ -16,6 +17,9 @@
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
   background-color: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   @include media-query($on-palm) {
   }
 }
@@ -43,6 +47,8 @@
     padding-right: 45px;
     margin-left: 80px;
     margin-bottom: 10px;
+    width: 133px;
+    height: 22px;
   }
 }
 
@@ -195,10 +201,10 @@
   input:checked ~ .trigger {
     display: block;
     padding-bottom: 5px;
-    height: 100%;
+    height: calc(100vh);
     width: 100%;
-    z-index: 2;
-    top: 5px;
+    z-index: 4;
+    top: -1px;
     left: 0px;
     background-color: #36443A;
   }
@@ -382,7 +388,8 @@
  * Page content
  */
 .page-content {
-  padding: 0;
+  padding-top: 134px;
+  // padding: 0;
   flex: 1 0 auto;
 }
 
