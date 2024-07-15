@@ -24,6 +24,14 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
   }
+
+  &:hover {
+    box-shadow: 0 0 0 1.5px $darkColor !important;
+    background-color: $darkColor;
+    span {
+      color: #FFFBF5;
+    }
+  }
 }
 
 .btn-wrapper {
@@ -43,6 +51,13 @@
   a {
     color: #36443a;
     text-decoration: none !important;
+  }
+  &:hover {
+    box-shadow: 0 0 0 1.5px $darkColor !important;
+    background-color: $darkColor;
+    span {
+      color: #FFFBF5;
+    }
   }
 }
 
