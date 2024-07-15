@@ -26,6 +26,8 @@
         line-height: 36px;
         padding-left: 30px;
         padding-right: 30px;
+        position: relative;
+        top: -20px;
         @include font-larken(400);
       }
 
@@ -69,13 +71,13 @@
 
       .benefit-list-wrapper {
         padding-left: 38px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-top: 20px;
 
         &-benefit {
           gap: 10px;
           display: flex;
-          align-items: center;
+          // align-items: center;
 
           p {
             font-size: 18px;
@@ -85,6 +87,12 @@
             @include font-poppins(400);
           }
         }
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
       }
     }
 
@@ -475,6 +483,9 @@
         font-size: 34px;
         margin-top: 22px;
         z-index: 1;
+        // position: relative;
+        // top: -40px;
+        // box-shadow: 0px -22px 60px 117px #36443A;
         @include font-larken(400);
       }
 

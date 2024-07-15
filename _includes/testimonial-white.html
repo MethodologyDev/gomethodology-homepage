@@ -2,9 +2,9 @@
   <div class="carousel-white-content">
     {% for item in site.data.carousel %}
     <div class="carousel-white-item">
-      <p>{{ item.content }}</p>
+      <p class="item-content-white">{{ item.content }}</p>
       <p>----------</p>
-      <p>{{ item.title }}</p>
+      <p class="item-title-white">{{ item.title }}</p>
     </div>
     {% endfor %}
   </div>
@@ -44,12 +44,8 @@
     p {
       text-align: center;
       margin-bottom: 2px;
-      color: #FFFBF5;
       padding-left: 40px;
       padding-right: 40px;
-      color: #36443A;
-      font-size: 15px;
-      font-family: "Poppins", "Helvetica Neue", sans-serif !important;
     }
   }
 

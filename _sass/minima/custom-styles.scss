@@ -499,3 +499,20 @@
   padding-right: 40px;
   @include font-poppins(400);
 }
+
+.item-content-white {
+  color: #36443A;
+  text-align: center;
+  font-size: 12px;
+  line-height: 23px;
+  @include font-poppins(400);
+}
+
+.item-title-white {
+  color: #36443A;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  @include font-larken(400);
+}
