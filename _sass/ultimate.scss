@@ -113,12 +113,13 @@
         &-benefit {
           gap: 10px;
           display: flex;
-          align-items: center;
+          // align-items: center;
 
           p {
             font-size: 15px;
             line-height: 22px;
             color: $darkColor;
+            width: 75%;
             @include font-poppins(400);
           }
         }
