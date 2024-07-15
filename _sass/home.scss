@@ -93,6 +93,9 @@
       padding-left: 38px;
       margin-bottom: 40px;
       margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
 
       .benefit {
         gap: 10px;
@@ -100,6 +103,7 @@
         align-items: center;
 
         p {
+          margin: 0;
           font-size: 15px;
           @include font-poppins(500);
           line-height: 25px;
