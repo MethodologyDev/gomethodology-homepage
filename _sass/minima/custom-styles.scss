@@ -479,19 +479,23 @@
   }
 }
 
-.item-title {
+.item-title-dark {
   color: #FFFBF5;
   font-size: 15px;
   font-style: normal;
   line-height: 23px;
   letter-spacing: 0.15px;
+  padding-left: 40px;
+  padding-right: 40px;
   @include font-larken(400);
 }
 
-.item-content {
+.item-content-dark {
   color: #FFFBF5;
   text-align: center;
   font-size: 12px;
   line-height: 23px;
+  padding-left: 40px;
+  padding-right: 40px;
   @include font-poppins(400);
 }
