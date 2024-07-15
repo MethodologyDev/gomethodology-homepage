@@ -93,6 +93,9 @@
       padding-left: 38px;
       margin-bottom: 40px;
       margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
 
       .benefit {
         gap: 10px;
@@ -100,6 +103,7 @@
         align-items: center;
 
         p {
+          margin: 0;
           font-size: 15px;
           @include font-poppins(500);
           line-height: 25px;
@@ -282,6 +286,10 @@
       height: 50px;
       align-items: center;
       margin-top: 16px;
+
+      .check-avail-btn {
+        width: 100%;
+      }
     }
   }
 
@@ -321,7 +329,7 @@
   .order-now-btn {
     justify-content: center;
     display: flex;
-    margin-top: 80px;
+    margin-top: 26px;
   }
 
   .section-good-planet {
@@ -385,10 +393,10 @@
       left: 0;
       background-position: bottom;
       background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: inset 0px -165px 84px 0px #36443a;
-      background-position-y: -10px;
-      background-position-x: 0px;
+      background-size: 114%;
+      box-shadow: inset 0px -95px 98px 0px #36443a;
+      background-position-y: -25px;
+      background-position-x: -14px;
 
       p {
         margin: 0;
@@ -403,6 +411,8 @@
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      position: relative;
+      top: -18px;
 
       .text-content {
         margin-top: 15px;

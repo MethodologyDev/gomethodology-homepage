@@ -1,10 +1,10 @@
 <div class="carousel">
-  <div class="carousel-content">
+  <div class="carousel-content-dark">
     {% for item in site.data.carousel %}
-    <div class="carousel-item">
-      <p>{{ item.content }}</p>
+    <div class="carousel-item-dark">
+      <p class="item-content-dark">{{ item.content }}</p>
       <p>----------</p>
-      <p>{{ item.title }}</p>
+      <p class="item-title-dark">{{ item.title }}</p>
     </div>
     {% endfor %}
   </div>
@@ -31,24 +31,18 @@
     overflow: hidden;
   }
 
-  .carousel-content {
+  .carousel-content-dark {
     display: flex;
     transition: transform 0.5s ease;
   }
 
-  .carousel-item {
+  .carousel-item-dark {
     flex: 0 0 100%;
     padding: 20px;
     box-sizing: border-box;
-
     p {
       text-align: center;
-      margin-bottom: 2px;
       color: #FFFBF5;
-      padding-left: 40px;
-      padding-right: 40px;
-      color: #FFFBF5;
-      font-family: "Poppins", "Helvetica Neue", sans-serif !important;
     }
   }
 
@@ -76,8 +70,8 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const content = document.querySelector('.carousel-content');
-    const items = document.querySelectorAll('.carousel-item');
+    const content = document.querySelector('.carousel-content-dark');
+    const items = document.querySelectorAll('.carousel-item-dark');
     const prevBtn = document.querySelector('.carousel-prev');
     const nextBtn = document.querySelector('.carousel-next');
     let currentIndex = 0;
