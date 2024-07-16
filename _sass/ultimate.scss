@@ -32,7 +32,7 @@
           width: 100%;
 
           .hero-text {
-            margin: 0 0 16px 0;
+            margin: 0 0 5px 0;
             width: 100%;
 
             p {
@@ -47,7 +47,7 @@
           }
 
           .hero-text-footer {
-            margin: 0 0 16px 0;
+            margin: 0 0 10px 0;
             width: 100%;
 
             p {
@@ -107,7 +107,7 @@
 
       .benefit-list-wrapper {
         padding-left: 38px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         margin-top: 30px;
 
         &-benefit {
@@ -504,6 +504,11 @@
           @include font-poppins(400);
         }
       }
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+      }
     }
 
     .results-model {
@@ -523,7 +528,7 @@
       .btn-wrapper {
         display: flex;
         justify-content: center;
-        margin-top: 24px;
+        margin-top: 0px;
       }
 
       .heading-text {
