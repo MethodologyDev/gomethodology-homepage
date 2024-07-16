@@ -27,24 +27,7 @@ title: Home
   </div>
 </section>
 
-<section class="press">
-  <div class="marquee">
-    <div class="marquee-content">
-      <img src="./assets/images/home/wsj.png" class="wsj" />
-      <img src="./assets/images/home/rollingstone.png" class="rollingstone" />
-      <img src="./assets/images/home/forbes.png" class="forbes" />
-      <img src="./assets/images/home/womenshealth.png" class="womenshealth" />
-      <img src="./assets/images/home/1598px-Inc.png" class="inc" />
-      <img src="./assets/images/home/mens-health.png" class="otherimg" />
-      <img src="./assets/images/home/wsj.png" class="wsj" />
-      <img src="./assets/images/home/rollingstone.png" class="rollingstone" />
-      <img src="./assets/images/home/forbes.png" class="forbes" />
-      <img src="./assets/images/home/womenshealth.png" class="womenshealth" />
-      <img src="./assets/images/home/1598px-Inc.png" class="inc" />
-      <img src="./assets/images/home/mens-health.png" class="otherimg" />
-    </div>
-  </div>
-</section>
+{%- include press-logos.html -%}
 
 <section>
   <video class="intro-video" width="100%" height="474px" autoplay loop muted playsinline>
@@ -155,7 +138,7 @@ title: Home
       </div>
     </div>
     <div class="divider">
-      <img src="./assets/images/home/horizontal-line.svg" width="90%" />
+      <img src="./assets/images/home/horizontal-line.svg" width="90%" alt="null" />
     </div>
     <div class="program">
       <img src="./assets/images/home/tranformation_tribe.jpeg" alt="signature_program" height="143px" width="152px" />
@@ -178,7 +161,7 @@ title: Home
       </div>
     </div>
     <div class="divider">
-      <img src="./assets/images/home/horizontal-line.svg" width="90%" />
+      <img src="./assets/images/home/horizontal-line.svg" width="90%" alt="null" />
     </div>
     <div class="program">
       <img src="./assets/images/home/ultimate_program.jpeg" alt="ultimate_program" height="143px" width="152px" />
@@ -198,7 +181,7 @@ title: Home
       </div>
     </div>
     <div class="divider">
-      <img src="./assets/images/home/horizontal-line.svg" width="90%" />
+      <img src="./assets/images/home/horizontal-line.svg" width="90%" alt="null" />
     </div>
     <div class="program">
       <img class="program-image-style" src="./assets/images/home/post_partum.png" alt="post_partum" />
@@ -257,34 +240,36 @@ title: Home
 
 <section class="images-ingredients">
   <div>
-    <img src="./assets/images/ingredients/Bariani-Olive-Oil.png" height="95px" width="89px" />
+    <img src="./assets/images/ingredients/Bariani-Olive-Oil.png" height="95px" width="89px" alt="Bariani Olive Oil" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/santa-barbara-organic.png" height="90px" width="90px" />
+    <img src="./assets/images/ingredients/santa-barbara-organic.png" height="90px" width="90px"
+      alt="Santa Barbara Organic Criolla Chocolate" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/coke-farm-1.png" height="73px" width="90px" />
+    <img src="./assets/images/ingredients/coke-farm-1.png" height="73px" width="90px" alt="Coke Farm" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/lakeside-organic-gardens.png" height="51px" width="101px" />
+    <img src="./assets/images/ingredients/lakeside-organic-gardens.png" height="51px" width="101px"
+      alt="Lakeside Organic Gardens" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/stemple-creek.png" height="52px" width="90px" />
+    <img src="./assets/images/ingredients/stemple-creek.png" height="52px" width="90px" alt="Stemple Creek" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/new-natives.png" height="50px" width="89px" />
+    <img src="./assets/images/ingredients/new-natives.png" height="50px" width="89px" alt="New Natives" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/frog-hollow-farm.png" height="89px" width="89px" />
+    <img src="./assets/images/ingredients/frog-hollow-farm.png" height="89px" width="89px" alt="Frog Hollow Farm" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/hodo.png" height="53px" width="90px" />
+    <img src="./assets/images/ingredients/hodo.png" height="53px" width="90px" alt="Hodo" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/riverdog-farm.png" height="89px" width="90px" />
+    <img src="./assets/images/ingredients/riverdog-farm.png" height="89px" width="90px" alt="RiverDog Farm" />
   </div>
   <div>
-    <img src="./assets/images/ingredients/first-light-farms.png" height="27px" width="133px" />
+    <img src="./assets/images/ingredients/first-light-farms.png" height="27px" width="133px" alt="First Light Farms" />
   </div>
 </section>
 
@@ -303,22 +288,23 @@ title: Home
   </div>
   <section class="planet-details">
     <div>
-      <img src="./assets/images/planet/planet1.png" />
+      <img src="./assets/images/planet/planet1.png" alt="Assorted fresh vegetables and herbs" />
       <p>
         The world's first zero food waste delivery service. Most restaurants
         and kitchens waste 4-10% of their food. We waste less than 1%.
       </p>
     </div>
     <div>
-      <img src="./assets/images/planet/planet2.png" />
+      <img src="./assets/images/planet/planet2.png" alt="Hand holding a glass jar filled with vegetables" />
       <p>In California courier regions, we recollect packaging for reuse.</p>
     </div>
     <div>
-      <img src="./assets/images/planet/planet3.png" />
+      <img src="./assets/images/planet/planet3.png" alt="Cow grazing in a green pasture" />
       <p>Pastured, wild, and sustainable proteins, meat, and seafood.</p>
     </div>
     <div>
-      <img src="./assets/images/planet/planet4.png" />
+      <img src="./assets/images/planet/planet4.png"
+        alt="Glass jar filled with layered salad ingredients next to a green lid" />
       <p>100% Reusable and recyclable bentos and glass jars.</p>
     </div>
   </section>
@@ -417,13 +403,14 @@ title: Home
 <section class="section-why-started">
   <p class="title">Why I Started</p>
   <p class="title">Methodology</p>
-  <img class="profile" src="./assets/images/home/julie3.png" />
+  <img class="profile" src="./assets/images/home/julie3.png" alt="Julie Nguyen" />
   <p class="name">Julie Nguyen</p>
   <p class="position">CEO & Co-Founder</p>
   <p class="position">of Methodology</p>
   <div class="about-text">
     I started Methodology because I was tired of eating unsatisfying diet food in order to be healthy.
-    All the other meal prep services out there only offered bland food that looked and tasted like TV dinners or sad salads. Methodology is the first nutrition program to check all your boxes: easy, beautiful, high-quality,
+    All the other meal prep services out there only offered bland food that looked and tasted like TV dinners or sad
+    salads. Methodology is the first nutrition program to check all your boxes: easy, beautiful, high-quality,
     and shockingly delicious-while still optimizing ALL your dietary needs.
   </div>
   <section class="order-now-btn">
@@ -453,16 +440,16 @@ title: Home
   <p class="description">Follow us on social media</p>
   <div class="sm-icon-container">
     <a href="https://www.instagram.com/gomethodology/">
-      <img src="./assets/images/home/icon-ig.svg" />
+      <img src="./assets/images/home/icon-ig.svg" alt="Instagram icon" />
     </a>
     <a href="#">
-      <img src="./assets/images/home/icon-fb.svg" />
+      <img src="./assets/images/home/icon-fb.svg" alt="Facebook icon" />
     </a>
     <a href="https://www.tiktok.com/@gomethodology">
-      <img src="./assets/images/home/icon-tiktok.svg" />
+      <img src="./assets/images/home/icon-tiktok.svg" alt="TikTok icon"/>
     </a>
     <a href="#">
-      <img src="./assets/images/home/icon-yt.svg" />
+      <img src="./assets/images/home/icon-yt.svg" alt="YouTube icon" />
     </a>
   </div>
 </section>
