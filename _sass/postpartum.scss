@@ -5,7 +5,7 @@
       position: relative;
 
       .lead-image {
-        background: url("../../assets/images/postpartum/lead-image.jpeg");
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/lead-image.jpeg");
         width: 100%;
         height: 553px;
         background-size: 135%;
@@ -44,7 +44,7 @@
     }
 
     .product-1-image {
-      background: url("../../assets/images/postpartum/method-image-1.jpeg");
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/method-image-1.jpeg");
       height: 275px;
       width: 100%;
       background-size: 113%;
@@ -101,7 +101,7 @@
       width: 100%;
       background:
         linear-gradient(0deg, rgba(54, 68, 58, 0.90) 0%, rgba(54, 68, 58, 0.90) 100%),
-        url(../../assets/images/home/BentoColourShowcase_Green_130.jpeg);
+        url(https://d1cbtwb0qnacuk.cloudfront.net/images/home/BentoColourShowcase_Green_130.jpeg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -160,7 +160,7 @@
       .product-image {
         width: 100%;
         height: 334px;
-        background: url("../../assets/images/transformation/product-list.jpeg");
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/transformation/product-list.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 143%;
@@ -179,7 +179,7 @@
     }
 
     .product-2-image {
-      background: url("../../assets/images/postpartum/method-image-2.jpeg");
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/method-image-2.jpeg");
       height: 379px;
       width: 100%;
       background-size: 162%;
@@ -335,7 +335,7 @@
     }
 
     .model1-section {
-      background: url("../../assets/images/postpartum/model-1.png");
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
       width: 100%;
       height: 583px;
       background-size: 105%;
@@ -445,7 +445,7 @@
     }
 
     .model2-section {
-      background: url("../../assets/images/postpartum/model-2.jpeg");
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-2.jpeg");
       background-size: cover;
       height: 409px;
       position: relative;
@@ -507,7 +507,7 @@
     }
 
     .model1-cropped {
-      background: url("../../assets/images/postpartum/model-1.png");
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
       background-size: cover;
       position: relative;
       background-position-y: -140px;
@@ -570,6 +570,12 @@
         padding-left: 55px;
         padding-right: 55px;
         @include font-larken(400);
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
       }
     }
 
