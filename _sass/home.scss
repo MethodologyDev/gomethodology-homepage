@@ -300,6 +300,7 @@
     font-style: normal;
     line-height: 41px;
     margin-top: 5px;
+    padding-top: 25px;
     @include font-larken(400);
   }
 
@@ -310,6 +311,7 @@
     gap: 5%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 50px;
   }
 
   .images-ingredients div {
