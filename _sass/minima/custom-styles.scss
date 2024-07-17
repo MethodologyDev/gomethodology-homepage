@@ -172,10 +172,14 @@
   column-gap: 25px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
 
   .slider-container {
     display: flex;
     flex-direction: column;
+    scroll-snap-align: center;
 
     .slider-title {
       color: #36443A;
