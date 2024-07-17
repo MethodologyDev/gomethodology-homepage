@@ -6,6 +6,40 @@
       position: relative;
     }
 
+    /* Hide all controls except play/pause */
+    .intro-video::-webkit-media-controls-timeline,
+    .intro-video::-webkit-media-controls-current-time-display,
+    .intro-video::-webkit-media-controls-time-remaining-display,
+    .intro-video::-webkit-media-controls-volume-slider,
+    .intro-video::-webkit-media-controls-fullscreen-button,
+    .intro-video::-webkit-media-controls-rewind-button,
+    .intro-video::-webkit-media-controls-return-to-realtime-button,
+    .intro-video::-webkit-media-controls-playback-rate-menu-button,
+    .intro-video::-webkit-media-controls-overflow-button,
+    .intro-video::-webkit-media-controls-toggle-closed-captions-button {
+      display: none;
+    }
+
+    .intro-video::-webkit-media-controls-mute-button,
+    .intro-video::-webkit-media-controls-play-button {
+      background-size: 35px;
+    }
+
+    .intro-video::-webkit-media-controls-panel {
+      background: none !important;
+      background-image: none !important;
+    }
+
+    /* For Firefox */
+    .intro-video::-moz-range-track {
+      display: none;
+    }
+
+    /* For IE/Edge */
+    .intro-video::-ms-track {
+      display: none;
+    }
+
     .hero {
       top: 0px !important;
       position: relative;
@@ -120,6 +154,7 @@
       background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/model.jpeg");
       background-size: cover;
     }
+
     .btn-wrapper {
       display: flex;
       justify-content: center;
