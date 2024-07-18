@@ -1,0 +1,89 @@
+<div class="variation-scroll" id="variation-slider">
+  {% for item in site.data.transformation-programs %}
+    <div class="variation-item">
+      <div class="item-flex">
+        <div>
+          <p class="small-text">{{ item.duration }}</p>
+          <p class="large-text">{{ item.title }}</p>
+        </div>
+        <img src="https://d1cbtwb0qnacuk.cloudfront.net/images/transformation/plus-icon.svg" alt="plus icon" />
+        <div>
+          <p class="small-text">{{ item.plus_duration }}</p>
+          <p class="large-text">{{ item.plus_title }}</p>
+        </div>
+        <div class="option">
+          <div class="col-div right-col">
+            <p class="days">{{ item.option1_days }}</p>
+            <p class="occurrence">{{ item.option1_occurrence }}</p>
+          </div>
+          <img src="https://d1cbtwb0qnacuk.cloudfront.net/images/transformation/vertical-divider.svg" alt="null" />
+          <div class="col-div left-col">
+            <p class="food-detail">{{ item.option1_detail }}</p>
+            <p class="food-detail-bold">{{ item.option1_detail_1 }}</p>
+          </div>
+        </div>
+        <div class="option">
+          <div class="col-div right-col">
+            <p class="days">{{ item.option2_days }}</p>
+            <p class="occurrence">{{ item.option2_occurrence }}</p>
+          </div>
+          <img src="https://d1cbtwb0qnacuk.cloudfront.net/images/transformation/vertical-divider.svg" alt="null" />
+          <div class="col-div left-col">
+            <p class="food-detail">{{ item.option2_detail }}</p>
+            <p class="food-detail-bold">{{ item.option2_detail_2 }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<div class="scroll-view">
+  <div id="variation-scroll-element" class="scroll-container">
+    <div class="content2">
+      {% for item in site.data.transformation-programs %}
+        <div class="variation-scroll-item"></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function syncVariationScroll(event) {
+    var sourceElement = event.target;
+    var targetElement = (sourceElement.id === 'variation-slider') ? document.getElementById('variation-scroll-element') : document.getElementById('variation-slider');
+    targetElement.scrollLeft = sourceElement.scrollLeft;
+  }
+
+  document.getElementById('variation-slider').addEventListener('scroll', syncVariationScroll);
+  document.getElementById('variation-slider').addEventListener('scroll', syncVariationScroll);
+</script>
+
+<style>
+  .scroll-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .scroll-container {
+    height: 4px;
+    width: 50%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom: 1px solid #36443A;
+    margin-top: 22px;
+    scrollbar-color: #36443A;
+  }
+
+  .variation-scroll-item {
+    display: inline-block;
+    width: 200px;
+    height: 0px;
+    margin-right: 10px;
+  }
+</style>

@@ -124,12 +124,17 @@
       align-items: center;
       overflow: auto;
       column-gap: 25px;
-      padding-bottom: 35px;
+      // padding-bottom: 35px;
+      scrollbar-width: none;
+      overflow-y: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory;
 
       .variation-item {
         border-radius: 20px;
         border: 1px solid #000;
         background-color: #C9D5C8;
+        scroll-snap-align: center;
 
         p {
           margin: 0px;
