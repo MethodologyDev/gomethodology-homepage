@@ -270,6 +270,11 @@
         padding-bottom: 20px;
         @include font-poppins(400);
       }
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
     }
 
     .variation-scroll {
@@ -278,9 +283,14 @@
       align-items: center;
       overflow: auto;
       column-gap: 25px;
-      padding-bottom: 35px;
+      padding-bottom: 10px;
+      scrollbar-width: none;
+      overflow-y: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory;
 
       .variation-item {
+        scroll-snap-align: center;
         p {
           margin: 0px;
         }

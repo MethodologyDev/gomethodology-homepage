@@ -1,0 +1,85 @@
+<div class="family-page">
+  <div class="variation-scroll" id="variation-slider">
+    <div class="variation-item">
+      <div class="item"></div>
+      <p class="detail">
+        Dinner 1 in Bakeware: Pastured Chicken Breast (“Parmesagna”)
+      </p>
+      <div class="item"></div>
+      <p class="detail">
+        Dinner 2 in bakeware (100% Grass-Fed Beef Lasagna)
+      </p>
+    </div>
+    <div class="variation-item">
+      <div class="item"></div>
+      <p class="detail">
+        Dinner 1 in Bakeware: Pastured Chicken Breast (“Parmesagna”)
+      </p>
+      <div class="item"></div>
+      <p class="detail">
+        Dinner 2 in bakeware (100% Grass-Fed Beef Lasagna)
+      </p>
+    </div>
+    <div class="variation-item">
+      <div class="item"></div>
+      <p class="detail">
+        Dinner 1 in Bakeware: Pastured Chicken Breast (“Parmesagna”)
+      </p>
+      <div class="item"></div>
+      <p class="detail">
+        Dinner 2 in bakeware (100% Grass-Fed Beef Lasagna)
+      </p>
+    </div>
+  </div>
+
+  <div class="scroll-view">
+    <div id="variation-scroll-element" class="scroll-container">
+      <div class="content2">
+        <div class="variation-scroll-item"></div>
+        <div class="variation-scroll-item"></div>
+        <div class="variation-scroll-item"></div>
+        <div class="variation-scroll-item"></div>
+        <div class="variation-scroll-item"></div>
+        <div class="variation-scroll-item"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function syncBoxScroll(event) {
+    var sourceElement = event.target;
+    var targetElement = (sourceElement.id === 'variation-slider') ? document.getElementById('variation-scroll-element') : document.getElementById('variation-slider');
+    targetElement.scrollLeft = sourceElement.scrollLeft;
+  }
+
+  document.getElementById('variation-slider').addEventListener('scroll', syncBoxScroll);
+  document.getElementById('variation-slider').addEventListener('scroll', syncBoxScroll);
+</script>
+
+<style>
+  .scroll-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+  }
+
+  .scroll-container {
+    height: 4px;
+    width: 50%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom: 1px solid #36443A;
+    margin-top: 22px;
+    scrollbar-color: #36443A;
+  }
+
+  .variation-scroll-item {
+    display: inline-block;
+    width: 265px;
+    height: 0px;
+    margin-right: 10px;
+  }
+</style>
