@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     myHeaders.append("Accept", "*/*");
     myHeaders.append("Accept-Language", "en-US,en;q=0.9");
     myHeaders.append("Connection", "keep-alive");
-    myHeaders.append("Origin", "https://www.gomethodology.com");
-    myHeaders.append("Referer", "https://www.gomethodology.com/");
+    myHeaders.append("Origin", "https://methodology-test.herokuapp.com");
+    myHeaders.append("Referer", "https://methodology-test.herokuapp.com/");
     myHeaders.append("Sec-Fetch-Dest", "empty");
     myHeaders.append("Sec-Fetch-Mode", "cors");
     myHeaders.append("Sec-Fetch-Site", "same-site");
