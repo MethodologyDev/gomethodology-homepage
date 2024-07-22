@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const zipInput = document.querySelector('.zip-code-input');
   const checkButton = document.querySelector('.check-avail-btn');
-  const resultDiv = document.createElement('div');
-  resultDiv.className = 'availability-result';
-  document.querySelector('.btn-wrapper').appendChild(resultDiv);
+  const resultDiv = document.querySelector('.zip-code');
 
   checkButton.addEventListener('click', function(e) {
     e.preventDefault();
@@ -45,16 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     resultDiv.textContent = 'Checking availability...';
 
-    fetch("https://app.gomethodology.com/graphql", requestOptions)
+    fetch("https://methodology-test.herokuapp.com/graphql", requestOptions)
     .then(response => response.json())
     .then(data => {
       if (data.data && data.data.getZipcodeInfo) {
         const status = data.data.getZipcodeInfo.status;
-        if (status === "AVAILABLE") {
-          resultDiv.textContent = 'Service is available in your area!';
-          checkButton.querySelector('a').href = `https://app.gomethodology.com/onramp/sign-up?zipcode=${zipCode}`;
-        } else {
+        if (status === "NA") {
           resultDiv.textContent = 'Sorry, service is not available in your area.';
+        } else {
+          resultDiv.textContent = 'Service is available in your area!';
+          const url = `https://methodology-test.herokuapp.com/onramp/init-order?zipcode=${zipCode}`;
+          window.open(url, '_blank').focus();
         }
       } else {
         resultDiv.textContent = 'Error checking availability. Please try again.';
