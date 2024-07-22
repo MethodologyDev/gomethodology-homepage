@@ -1,7 +1,7 @@
 .family-page {
   @include media-query($on-palm) {
     .hero {
-      height: 610px;
+      height: 554px;
       box-shadow: inset 0px -160px 43px 20px rgba(0, 0, 0, .3), inset 1px 151px 138px 20px rgba(0, 0, 0, .3);
       background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/family/lead-image.jpeg");
       background-position: center;
@@ -87,7 +87,7 @@
         .hero-content-footer {
           display: flex;
           flex-direction: column;
-          min-height: 610px;
+          min-height: 565px;
           justify-content: flex-end;
         }
 
