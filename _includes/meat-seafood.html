@@ -1,0 +1,24 @@
+<div class="slider-wrapper meat-seafood" id="main-slider">
+  {% for item in site.data.meat-seafood %}
+    <div class="slider-container">
+      <div class="product-item" data-index="0">
+        <img class="product-image" src="{{ item.image }}"
+          alt="{{ item.image }}" />
+        <div class="product-detail-section">
+          <p class="product-title">{{ item.meal_type }}</p>
+          <div class="food-name">
+            <p>{{ item.name }}</p>
+          </div>
+          <div class="nutrition">
+            {% for nutrition in item.nutrition %}
+              <div>
+                <p>{{ nutrition.gram }}</p>
+                <p>{{ nutrition.name }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

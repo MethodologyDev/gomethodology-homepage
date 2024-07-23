@@ -197,6 +197,16 @@
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
+      min-height: 358px;
+
+      .product-detail-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        text-align: center;
+        justify-content: space-between;
+      }
 
       .product-image {
         height: 190px;
@@ -215,12 +225,14 @@
         @include font-larken(400);
       }
 
-      .food-name p {
+      .food-name {
         margin: 0;
         color: #36443A;
         text-align: center;
         font-size: 15px;
         line-height: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
         @include font-poppins(400);
       }
 
@@ -230,8 +242,8 @@
         flex: 1;
         justify-content: space-around;
         width: 100%;
-        padding-top: 10px;
         padding-bottom: 10px;
+        align-items: flex-end;
 
         p {
           margin: 0;

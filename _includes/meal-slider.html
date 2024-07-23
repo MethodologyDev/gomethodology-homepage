@@ -1,112 +1,23 @@
 <div class="slider-wrapper slider-header">
-  <div class="slider-container">
-    <p class="slider-title" data-index="0">Seafood + Vegan</p>
+  <div class="slider-container slider-container-title">
+    <p class="slider-title" data-index="0">Meat + Seafood</p>
   </div>
-  <div class="slider-container">
-    <p class="slider-title" data-index="1">Meat + Vegan</p>
+  <div class="slider-container slider-container-title">
+    <p class="slider-title" data-index="1">Vegan</p>
   </div>
-  <div class="slider-container">
-    <p class="slider-title" data-index="2">Seafood + Vegan</p>
+  <div class="slider-container slider-container-title">
+    <p class="slider-title" data-index="2">Meat + Vegan</p>
+  </div>
+  <div class="slider-container slider-container-title">
+    <p class="slider-title" data-index="3">Seafood + Vegan</p>
   </div>
 </div>
 
-<div class="slider-wrapper" id="main-slider">
-  <div class="slider-container">
-    <div class="product-item" data-index="0">
-      <img class="product-image" src="https://d1cbtwb0qnacuk.cloudfront.net/images/slider/seafood.png"
-        alt="Mediterranean Scrambled Egg Whites" />
-      <p class="product-title">Breakfast</p>
-      <div class="food-name">
-        <p>Mediterranean</p>
-        <p>Scrambled Egg Whites</p>
-      </div>
-      <div class="nutrition">
-        <div class="nutrition-item">
-          <p>284</p>
-          <p>Cal</p>
-        </div>
-        <div>
-          <p>32g</p>
-          <p>Protein</p>
-        </div>
-        <div>
-          <p>6g</p>
-          <p>Fiber</p>
-        </div>
-        <div>
-          <p>18g</p>
-          <p>Carbs</p>
-        </div>
-        <div>
-          <p>9g</p>
-          <p>Fat</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="slider-container">
-    <div class="product-item" data-index="1">
-      <img class="product-image" src="https://d1cbtwb0qnacuk.cloudfront.net/images/slider/vegan1.jpeg"
-        alt="Organic Ceremonial Matcha" />
-      <p class="product-title">Organic Ceremonial Matcha</p>
-      <div class="nutrition">
-        <div class="nutrition-item">
-          <p>284</p>
-          <p>Cal</p>
-        </div>
-        <div>
-          <p>32g</p>
-          <p>Protein</p>
-        </div>
-        <div>
-          <p>6g</p>
-          <p>Fiber</p>
-        </div>
-        <div>
-          <p>18g</p>
-          <p>Carbs</p>
-        </div>
-        <div>
-          <p>9g</p>
-          <p>Fat</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="slider-container">
-    <div class="product-item" data-index="2">
-      <img class="product-image" src="https://d1cbtwb0qnacuk.cloudfront.net/images/slider/seafood.png"
-        alt="Mediterranean Scrambled Egg Whites" />
-      <p class="product-title">Breakfast</p>
-      <div class="food-name">
-        <p>Mediterranean</p>
-        <p>Scrambled Egg Whites</p>
-      </div>
-      <div class="nutrition">
-        <div class="nutrition-item">
-          <p>284</p>
-          <p>Cal</p>
-        </div>
-        <div>
-          <p>32g</p>
-          <p>Protein</p>
-        </div>
-        <div>
-          <p>6g</p>
-          <p>Fiber</p>
-        </div>
-        <div>
-          <p>18g</p>
-          <p>Carbs</p>
-        </div>
-        <div>
-          <p>9g</p>
-          <p>Fat</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{%- include meat-seafood.html -%}
+{%- include vegan.html -%}
+{%- include meat-vegan.html -%}
+{%- include seafood-vegan.html -%}
+
 
 <div class="scroll-view">
   <div id="scroll-element" class="scroll-container">
@@ -156,6 +67,38 @@
         }
       });
     });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sliderContainers = document.querySelectorAll('.slider-container-title');
+
+    const partials = [
+      document.querySelector('.meat-seafood'),
+      document.querySelector('.vegan'),
+      document.querySelector('.meat-vegan'),
+      document.querySelector('.seafood-vegan')
+    ];
+
+    function showPartial(index) {
+      partials.forEach((partial, i) => {
+        if (i === index) {
+          partial.style.display = 'flex';
+        } else {
+          partial.style.display = 'none';
+        }
+      });
+    }
+
+    sliderContainers.forEach((container) => {
+      container.addEventListener('click', function() {
+        const index = parseInt(this.querySelector('.slider-title').getAttribute('data-index'));
+        showPartial(index);
+      });
+    });
+
+    showPartial(0);
   });
 </script>
 
