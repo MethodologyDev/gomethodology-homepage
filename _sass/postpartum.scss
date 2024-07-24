@@ -17,6 +17,12 @@
         position: relative;
         background: white;
         box-shadow: 0px -1px 70px 70px rgb(255, 255, 255);
+
+        .btn-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: -12px;
+        }
       }
 
       .title {
@@ -39,6 +45,8 @@
         margin-bottom: 17px;
         padding-left: 45px;
         padding-right: 45px;
+        position: relative;
+        top: -20px;
         @include font-poppins(400);
       }
     }
@@ -358,7 +366,7 @@
       }
 
       .signature-title {
-        padding-top: 24px;
+        padding-top: 0px;
 
         p {
           margin: 0;
