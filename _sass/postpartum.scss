@@ -7,7 +7,7 @@
       .lead-image {
         background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/lead-image.jpeg");
         width: 100%;
-        height: 553px;
+        height: 500px;
         background-size: 135%;
         background-position-x: -100px;
       }
@@ -17,6 +17,12 @@
         position: relative;
         background: white;
         box-shadow: 0px -1px 70px 70px rgb(255, 255, 255);
+
+        .btn-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: -12px;
+        }
       }
 
       .title {
@@ -39,6 +45,8 @@
         margin-bottom: 17px;
         padding-left: 45px;
         padding-right: 45px;
+        position: relative;
+        top: -20px;
         @include font-poppins(400);
       }
     }
@@ -57,7 +65,7 @@
       justify-content: center;
       align-items: center;
       background: #FFFBF5;
-      padding-top: 35px;
+      padding-top: 13px;
       padding-bottom: 35px;
 
       &-title {
@@ -180,7 +188,7 @@
 
     .product-2-image {
       background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/method-image-2.jpeg");
-      height: 379px;
+      height: 336px;
       width: 100%;
       background-size: 162%;
       background-position-x: -178px;
@@ -194,7 +202,7 @@
       justify-content: center;
       align-items: center;
       padding-bottom: 50px;
-      margin-top: 28px;
+      margin-top: 19px;
 
       div {
         display: flex;
@@ -216,7 +224,7 @@
         color: #36443A;
         text-align: center;
         font-size: 34px;
-        line-height: 31px;
+        line-height: 41px;
         @include font-larken(400);
       }
 
@@ -226,6 +234,11 @@
         line-height: 25px;
         @include font-poppins(600);
       }
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
     }
 
     .section-good-planet {
@@ -234,7 +247,7 @@
       padding-top: 10px;
 
       .title {
-        margin-top: 29px;
+        margin-top: 18px;
         color: #36443A;
         text-align: center;
         font-size: 34px;
@@ -353,7 +366,7 @@
       }
 
       .signature-title {
-        padding-top: 24px;
+        padding-top: 0px;
 
         p {
           margin: 0;
@@ -461,6 +474,10 @@
       justify-content: center;
       align-items: center;
       padding-bottom: 50px;
+      box-shadow: 0px 57px 60px 117px #36443A;
+      position: relative;
+      top: -40px;
+      height: 318px;
 
       .top-shadow {
         width: 100%;
@@ -494,6 +511,8 @@
         font-size: 15px;
         line-height: 155%;
         margin-top: 22px;
+        top: -35px;
+        position: relative;
         @include font-poppins(400);
       }
 
@@ -502,16 +521,18 @@
         font-size: 18px;
         font-style: normal;
         line-height: 155%;
+        top: -35px;
+        position: relative;
         @include font-poppins(600);
       }
     }
 
     .model1-cropped {
       background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
-      background-size: cover;
+      background-size: 100%;
       position: relative;
-      background-position-y: -140px;
-      height: 343.401px;
+      background-position-y: -57px;
+      height: 349.401px;
     }
 
 
