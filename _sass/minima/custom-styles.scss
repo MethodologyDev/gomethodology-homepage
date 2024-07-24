@@ -532,3 +532,14 @@
   letter-spacing: 0.15px;
   @include font-larken(400);
 }
+
+.fade-in-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
