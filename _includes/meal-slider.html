@@ -35,43 +35,25 @@
 <script>
   function syncScroll(event) {
     var sourceElement = event.target;
-    var targetElement = (sourceElement.id === 'main-slider') ? document.getElementById('scroll-element') : document.getElementById('main-slider');
-    targetElement.scrollLeft = sourceElement.scrollLeft;
+    var targetElement1 = (sourceElement.id === 'main-slider1') ? document.getElementById('scroll-element') : document.getElementById('main-slider1');
+    var targetElement2 = (sourceElement.id === 'main-slider2') ? document.getElementById('scroll-element') : document.getElementById('main-slider2');
+    var targetElement3 = (sourceElement.id === 'main-slider3') ? document.getElementById('scroll-element') : document.getElementById('main-slider3');
+    var targetElement4 = (sourceElement.id === 'main-slider4') ? document.getElementById('scroll-element') : document.getElementById('main-slider4');
+    targetElement1.scrollLeft = sourceElement.scrollLeft;
+    targetElement2.scrollLeft = sourceElement.scrollLeft;
+    targetElement3.scrollLeft = sourceElement.scrollLeft;
+    targetElement4.scrollLeft = sourceElement.scrollLeft;
   }
 
-  document.getElementById('main-slider').addEventListener('scroll', syncScroll);
-  document.getElementById('main-slider').addEventListener('scroll', syncScroll);
+  document.getElementById('main-slider1').addEventListener('scroll', syncScroll);
+  document.getElementById('main-slider2').addEventListener('scroll', syncScroll);
+  document.getElementById('main-slider3').addEventListener('scroll', syncScroll);
+  document.getElementById('main-slider4').addEventListener('scroll', syncScroll);
 
 </script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const sliderTitles = document.querySelectorAll('.slider-title');
-    const mainSlider = document.getElementById('main-slider');
-    const productItems = mainSlider.querySelectorAll('.product-item');
-
-    sliderTitles.forEach(title => {
-      title.addEventListener('click', function () {
-        const index = this.getAttribute('data-index');
-        const targetProduct = mainSlider.querySelector(`.product-item[data-index="${index}"]`);
-
-        if (targetProduct) {
-          const containerRect = mainSlider.getBoundingClientRect();
-          const targetRect = targetProduct.getBoundingClientRect();
-          const scrollLeft = targetRect.left - containerRect.left - (containerRect.width / 2) + (targetRect.width / 2);
-
-          mainSlider.scrollTo({
-            left: mainSlider.scrollLeft + scrollLeft,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
     const sliderContainers = document.querySelectorAll('.slider-container-title');
 
     const partials = [
@@ -92,7 +74,7 @@
     }
 
     sliderContainers.forEach((container) => {
-      container.addEventListener('click', function() {
+      container.addEventListener('click', function () {
         const index = parseInt(this.querySelector('.slider-title').getAttribute('data-index'));
         showPartial(index);
       });
