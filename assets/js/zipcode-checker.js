@@ -3,15 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const checkButton = document.querySelector('.check-avail-btn');
   const resultDiv = document.querySelector('.zip-code');
 
-  checkButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    const zipCode = zipInput.value.trim();
-    if (zipCode) {
-      checkAvailability(zipCode);
-    } else {
-      resultDiv.textContent = 'Please enter a valid ZIP code.';
-    }
-  });
+  if (checkButton) {
+    checkButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      const zipCode = zipInput.value.trim();
+      if (zipCode) {
+        checkAvailability(zipCode);
+      } else {
+        resultDiv.textContent = 'Please enter a valid ZIP code.';
+      }
+    });
+  }
 
   function checkAvailability(zipCode) {
     const myHeaders = new Headers();
