@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  ;(function (factory) {
+  (function (factory) {
     var registeredInModuleLoader = false;
     if (typeof define === 'function' && define.amd) {
       define(factory);
@@ -18,11 +18,11 @@
       };
     }
   }(function () {
-    function extend () {
+    function extend() {
       var i = 0;
       var result = {};
       for (; i < arguments.length; i++) {
-        var attributes = arguments[ i ];
+        var attributes = arguments[i];
         for (var key in attributes) {
           result[key] = attributes[key];
         }
@@ -30,8 +30,8 @@
       return result;
     }
 
-    function init (converter) {
-      function api (key, value, attributes) {
+    function init(converter) {
+      function api(key, value, attributes) {
         var result;
         if (typeof document === 'undefined') {
           return;
@@ -55,7 +55,7 @@
             if (/^[\{\[]/.test(result)) {
               value = result;
             }
-          } catch (e) {}
+          } catch (e) { }
 
           if (!converter.write) {
             value = encodeURIComponent(String(value))
@@ -107,7 +107,7 @@
             if (this.json) {
               try {
                 cookie = JSON.parse(cookie);
-              } catch (e) {}
+              } catch (e) { }
             }
 
             if (key === name) {
@@ -118,7 +118,7 @@
             if (!key) {
               result[name] = cookie;
             }
-          } catch (e) {}
+          } catch (e) { }
         }
 
         return result;
@@ -146,81 +146,81 @@
       return api;
     }
 
-    return init(function () {});
+    return init(function () { });
   }));
 
-   var getSignUpParams = function() {
+  var getSignUpParams = function () {
     try {
       return JSON.parse(Cookies.get('_methodology_sign_up'));
-    } catch(e) {
+    } catch (e) {
       return {};
     }
   };
 
-  (function() {
+  (function () {
     try {
       var whitelist = ['campaign', 'channel', 'referral_code', 'promo_code', 'fbp', 'fbc'];
       var signUpParams = getSignUpParams();
       var search = window.location.search.substr(1) || "";
 
       var prmarr = search.split("&");
-      for ( var i = 0; i < prmarr.length; i++) {
+      for (var i = 0; i < prmarr.length; i++) {
         var tmparr = prmarr[i].split("=");
         var key = tmparr[0];
         var value = tmparr[1];
-        if (typeof(value) !== 'undefined' && whitelist.indexOf(key) > -1) {
+        if (typeof (value) !== 'undefined' && whitelist.indexOf(key) > -1) {
           signUpParams[key] = value ? decodeURIComponent(value) : value;
         }
       }
 
       Cookies.set('_methodology_sign_up', JSON.stringify(signUpParams), { domain: 'gomethodology.com' });
-    } catch(e) {
+    } catch (e) {
       console.error(e);
     }
   })();
 
-  (function() {
+  (function () {
     //shop my cookies sync
     try {
       var whitelistShopMy = ['sms_click_id', 'sms_click_time', 'smsclickid', 'smsclicktime'];
       var search = window.location.search.substr(1) || "";
 
       var prmarr = search.split("&");
-      for ( var i = 0; i < prmarr.length; i++) {
+      for (var i = 0; i < prmarr.length; i++) {
         var tmparr = prmarr[i].split("=");
         var key = tmparr[0];
         var value = tmparr[1];
-        if (typeof(value) !== 'undefined' && whitelistShopMy.indexOf(key) > -1) {
+        if (typeof (value) !== 'undefined' && whitelistShopMy.indexOf(key) > -1) {
           Cookies.set(key, value, { domain: 'gomethodology.com' });
         }
       }
 
 
-    } catch(e) {
+    } catch (e) {
       console.error(e);
     }
   })();
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     try {
       var signUpParams = getSignUpParams();
 
       if (Object.keys(signUpParams).length === 0) { return; }
       var pairs = [];
-      for(var key in signUpParams) {
+      for (var key in signUpParams) {
         pairs.push(key + '=' + signUpParams[key]);
       }
       var querystring = pairs.join('&');
 
-      $('[href*="//app.gomethodology.com"]').each(function(i, el) {
+      $('[href*="//app.gomethodology.com"]').each(function (i, el) {
         var $el = $(el);
         var url = $el.attr('href');
         var prefix = url.indexOf('?') > -1 ? '&' : '?';
         url += prefix + querystring;
         $el.attr('href', url);
       });
-    } catch(e) {
+    } catch (e) {
       console.error(e);
     }
   });
-  </script>
+</script>
