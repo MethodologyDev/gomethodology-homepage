@@ -9,6 +9,14 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
+  {%- if jekyll.environment == 'production' -%}
+    {%- include tiktok-pixel.html -%}
+    {%- include share-a-sale.html -%}
+    {%- include jquery-script.html -%}
+    {%- include data-layer.html -%}
+    {%- include cookie-sync.html -%}
+  {%- endif -%}
+
   {%- include custom-head.html -%}
 
 </head>
