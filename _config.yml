@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gomethodology.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gomethodology
 github_username: MethodologyDev
+google_analytics: GTM-MS266J5
 cdn_url: "https://d1cbtwb0qnacuk.cloudfront.net"
 
 # Build settings

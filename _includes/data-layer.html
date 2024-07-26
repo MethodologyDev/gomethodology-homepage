@@ -1,0 +1,32 @@
+<script>
+  window.dataLayer.push({ ecommerce: null });
+  window.dataLayer.push({
+    ecommerce: {
+      impressions: [{
+        'name': 'Home Page',
+        'category': 'Methodology',
+        'brand': 'Subscriptions',
+      }],
+    },
+  });
+
+  window.dataLayer.push({
+    ecommerce: {
+      detail: {
+        actionField: { list: 'Home Page' },
+        products: [{
+          'name': 'Subscription',
+          'brand': 'Methodology'
+        }],
+      },
+    },
+  });
+</script>
+
+<script type="application/javascript">
+  source = "www.gomethodology.com/";
+  page = location.href.split(location.search || location.hash || /[?#]/)[0];
+  search = document.location.search;
+  if ((page == ("http://" + source) || page == ("https://" + source)) && search != "" && window.name == "")
+    window.name = search;
+</script>
