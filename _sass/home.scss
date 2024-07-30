@@ -214,6 +214,7 @@
     .divider {
       display: flex;
       padding-left: 23px;
+      width: 89%;
     }
   }
 
@@ -271,6 +272,7 @@
       display: inline-flex;
       width: 90%;
       margin-top: 11px;
+      font-size: 16px;
       @include font-poppins(400);
     }
 
@@ -659,6 +661,7 @@
       padding: 14px 16px;
       align-items: center;
       column-gap: 10px;
+      font-size: 16px;
       @include font-poppins(400);
     }
 
