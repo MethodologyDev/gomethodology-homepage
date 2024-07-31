@@ -56,6 +56,10 @@
     width: 133px;
     height: 22px;
   }
+
+  @media screen and (min-width: $on-medium) {
+    content: url("../../assets/desktop-logo.svg");
+  }
 }
 
 .user-login {
@@ -341,6 +345,13 @@
   width: 100%;
   justify-content: flex-end;
   gap: 30px;
+
+  @media screen and (min-width: $on-medium) {
+    p {
+      color: #36443A;
+    }
+  }
+
   @include media-query($on-palm) {
     display: none;
   }
