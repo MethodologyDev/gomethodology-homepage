@@ -4,6 +4,27 @@ layout: home
 title: Home
 ---
 
+<section class="hero-desktop">
+  <div class="lead-image"></div>
+  <div class="lead-text-content">
+    <h1 class="hero-text">
+      <p>Beat Bloating, Banish</p>
+      <p>Cravings, and Fight Fatigue</p>
+      <p>With Gourmet Meals</p>
+    </h1>
+    <h1 class="hero-text-footer">
+      <p>Results without the suffering: 100+g</p>
+      <p>protein and 0g refined sugar / day</p>
+    </h1>
+    <div class="green-button">
+      <a href="#zipcode" rel="noopener noreferrer">
+        <span>order now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
 <section class="hero">
   <div class="content xs-nobr fade fade-delay--3">
     <div class="hero-container hero-content-inner">
@@ -29,76 +50,74 @@ title: Home
 
 {%- include press-logos.html -%}
 
-<section>
+<section class="video-checkbox">
   <video class="intro-video" width="100%" height="474px" autoplay loop muted playsinline>
     <source src="{{ site.cdn_url }}/videos/intro.mp4" type="video/mp4" />
   </video>
-</section>
+  <section class="checkboxes-section">
+    <p class="title">Methodology</p>
+    <p class="title">Checks All Your Boxes</p>
 
-<section class="checkboxes-section">
-  <p class="title">Methodology</p>
-  <p class="title">Checks All Your Boxes</p>
-
-  <div class="benefit-list-wrapper">
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-park-outline.svg" alt="25-50g" height="32px" />
-      <p>25-50g protein per meal</p>
-    </div>
-    <div class="benefit" style="align-items: center;margin-bottom: 10px;">
-      <img src="{{ site.cdn_url }}/images/home/icon-no-gluten.svg" alt="no-gluten" height="32px" />
-      <p style="position: relative;bottom: -9px;">No gluten, dairy, refined sugar, seed oils, or emulsifiers</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-avocado.svg" alt="avocado-icon" height="32px" />
-      <p>Cooked in avocado oil</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-proteins.svg" alt="icon-proteins" height="32px" />
-      <p>Pastured, sustainable proteins</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-packaging.svg" alt="icon-packaging" height="32px" />
-      <p>Reusable, recyclable packaging</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-heat-eat.svg" alt="25-50g" height="32px" />
-      <p>Heat and eat in 5 minutes</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-plants.svg" alt="25-50g" height="32px" />
-      <p>200+ plants per week</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-fiber.svg" alt="25-50g" height="32px" />
-      <p>30+g fiber per day</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-star.svg" alt="25-50g" height="32px" />
-      <p>Michelin-quality, rare produce</p>
-    </div>
-    <div class="benefit">
-      <img src="{{ site.cdn_url }}/images/home/icon-money.svg" alt="25-50g" height="32px" />
-      <div style="display: flex; flex-direction: column">
-        <p>$25-35 per meal</p>
-        <img src="{{ site.cdn_url }}/images/home/line.svg" alt="line" style="margin-bottom: 2px" />
-        <img src="{{ site.cdn_url }}/images/home/line.svg" alt="line" />
+    <div class="benefit-list-wrapper">
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-park-outline.svg" alt="25-50g" height="32px" />
+        <p>25-50g protein per meal</p>
+      </div>
+      <div class="benefit" style="align-items: center;margin-bottom: 10px;">
+        <img src="{{ site.cdn_url }}/images/home/icon-no-gluten.svg" alt="no-gluten" height="32px" />
+        <p style="position: relative;bottom: -9px;">No gluten, dairy, refined sugar, seed oils, or emulsifiers</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-avocado.svg" alt="avocado-icon" height="32px" />
+        <p>Cooked in avocado oil</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-proteins.svg" alt="icon-proteins" height="32px" />
+        <p>Pastured, sustainable proteins</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-packaging.svg" alt="icon-packaging" height="32px" />
+        <p>Reusable, recyclable packaging</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-heat-eat.svg" alt="25-50g" height="32px" />
+        <p>Heat and eat in 5 minutes</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-plants.svg" alt="25-50g" height="32px" />
+        <p>200+ plants per week</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-fiber.svg" alt="25-50g" height="32px" />
+        <p>30+g fiber per day</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-star.svg" alt="25-50g" height="32px" />
+        <p>Michelin-quality, rare produce</p>
+      </div>
+      <div class="benefit">
+        <img src="{{ site.cdn_url }}/images/home/icon-money.svg" alt="25-50g" height="32px" />
+        <div style="display: flex; flex-direction: column">
+          <p>$25-35 per meal</p>
+          <img src="{{ site.cdn_url }}/images/home/line.svg" alt="line" style="margin-bottom: 2px" />
+          <img src="{{ site.cdn_url }}/images/home/line.svg" alt="line" />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="green-button">
-    <a href="#zipcode" rel="noopener noreferrer">
-      <span class="uppercase">
-        <span>order now</span>
-      </span>
-    </a>
-  </div>
+    <div class="green-button">
+      <a href="#zipcode" rel="noopener noreferrer">
+        <span class="uppercase">
+          <span>order now</span>
+        </span>
+      </a>
+    </div>
+  </section>
 </section>
 
 <section class="our-programs">
   <div class="container">
     <div class="signature-title">
-      <p>A day in Our
-      <p>
+      <p>A day in Our</p>
       <p>Signature Program</p>
     </div>
     <div class="signature-desc">
@@ -116,91 +135,97 @@ title: Home
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-program">
     <p class="title">Our Programs</p>
-    <div class="program">
-      <img src="{{ site.cdn_url }}/images/home/signature_program.jpeg" alt="signature_program" height="143px" width="152px" />
-      <div class="program-details" style="gap: 10px">
-        <div class="program-title">
-          Signature
-          <div class="program-title">Program</div>
-        </div>
-        <div class="program-desc">
-          High-protein, calorie-
-          <div>controlled program</div>
-        </div>
-        <a href="{{ site.baseurl }}/signature">
-          <div class="tell-more">
-            <div>Tell me more</div>
-            <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+    <div class="program-list-wrapper">
+      <div class="program">
+        <img class="program-image-style" src="{{ site.cdn_url }}/images/home/signature_program.jpeg" alt="signature_program" />
+        <div class="program-details" style="gap: 10px">
+          <div class="program-title-wrapper">
+            <div class="program-title">Signature</div>
+            <div class="program-title">Program</div>
           </div>
-        </a>
+          <div class="program-desc">
+            High-protein, calorie-
+            <div>controlled program</div>
+          </div>
+          <a href="{{ site.baseurl }}/signature">
+            <div class="tell-more">
+              <div>Tell me more</div>
+              <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="divider">
-      <img src="{{ site.cdn_url }}/images/home/horizontal-line.svg" width="100%" alt="null" />
-    </div>
-    <div class="program">
-      <img src="{{ site.cdn_url }}/images/home/tranformation_tribe.jpeg" alt="signature_program" height="143px" width="152px" />
-      <div class="program-details">
-        <div class="program-title">
-          Transformation
-          <div class="program-title">Tribe</div>
-        </div>
-        <div class="program-desc">
-          Transform your habits
-          <div class="program-desc">and life with our 8-week</div>
-          <div class="program-desc">weight loss program</div>
-        </div>
-        <a href="{{ site.baseurl }}/transformation">
-          <div class="tell-more">
-            <div>Tell me more</div>
-            <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
-          </div>
-        </a>
+      <div class="divider">
+        <img src="{{ site.cdn_url }}/images/home/horizontal-line.svg" width="100%" alt="null" />
       </div>
-    </div>
-    <div class="divider">
-      <img src="{{ site.cdn_url }}/images/home/horizontal-line.svg" width="100%" alt="null" />
-    </div>
-    <div class="program">
-      <img src="{{ site.cdn_url }}/images/home/ultimate_program.jpeg" alt="ultimate_program" height="143px" width="152px" />
-      <div class="program-details" style="gap: 10px">
-        <div class="program-title">Ultimate Program</div>
-        <div class="program-desc">
-          Glass jar-only, high-
-          <div class="program-desc">protein, calorie-</div>
-          <div class="program-desc">controlled program</div>
-        </div>
-        <a href="{{ site.baseurl }}/ultimate">
-          <div class="tell-more">
-            <div>Tell me more</div>
-            <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+      <div class="program">
+        <img class="program-image-style" src="{{ site.cdn_url }}/images/home/tranformation_tribe.jpeg" alt="signature_program" />
+        <div class="program-details">
+          <div class="program-title-wrapper">
+            <div class="program-title">Transformation</div>
+            <div class="program-title">Tribe</div>
           </div>
-        </a>
+          <div class="program-desc">
+            Transform your habits
+            <div class="program-desc">and life with our 8-week</div>
+            <div class="program-desc">weight loss program</div>
+          </div>
+          <a href="{{ site.baseurl }}/transformation">
+            <div class="tell-more">
+              <div>Tell me more</div>
+              <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="divider">
-      <img src="{{ site.cdn_url }}/images/home/horizontal-line.svg" width="100%" alt="null" />
-    </div>
-    <div class="program">
-      <img class="program-image-style" src="{{ site.cdn_url }}/images/home/post_partum.png" alt="post_partum" />
-      <div class="program-details">
-        <div class="program-title">
-          Post Partum
-          <div>Haute Mom</div>
-        </div>
-        <div class="program-desc">
-          Nourishment to help
-          <div class="program-desc">new moms and</div>
-          <div class="program-desc">newborns feel their best</div>
-        </div>
-        <a href="{{ site.baseurl }}/postpartum">
-          <div class="tell-more">
-            <div>Tell me more</div>
-            <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+      <div class="divider">
+        <img src="{{ site.cdn_url }}/images/home/horizontal-line.svg" width="100%" alt="null" />
+      </div>
+      <div class="program">
+        <img class="program-image-style" src="{{ site.cdn_url }}/images/home/ultimate_program.jpeg" alt="ultimate_program" />
+        <div class="program-details" style="gap: 10px">
+          <div class="program-title-wrapper">
+            <div class="program-title">Ultimate Program</div>
           </div>
-        </a>
+          <div class="program-desc">
+            Glass jar-only, high-
+            <div class="program-desc">protein, calorie-</div>
+            <div class="program-desc">controlled program</div>
+          </div>
+          <a href="{{ site.baseurl }}/ultimate">
+            <div class="tell-more">
+              <div>Tell me more</div>
+              <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="{{ site.cdn_url }}/images/home/horizontal-line.svg" width="100%" alt="null" />
+      </div>
+      <div class="program">
+        <img class="program-image-style" src="{{ site.cdn_url }}/images/home/post_partum.png" alt="post_partum" />
+        <div class="program-details">
+          <div class="program-title-wrapper">
+            <div class="program-title">Post Partum</div>
+          </div>
+          <div class="program-title-wrapper" style="margin-top: 0px;">
+            <div class="program-title">Haute Mom</div>
+          </div>
+          <div class="program-desc">
+            Nourishment to help
+            <div class="program-desc">new moms and</div>
+            <div class="program-desc">newborns feel their best</div>
+          </div>
+          <a href="{{ site.baseurl }}/postpartum">
+            <div class="tell-more">
+              <div>Tell me more</div>
+              <img src="{{ site.cdn_url }}/images/home/icon-arrow-right.svg" alt="line" class="arrow-right" />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -226,7 +251,30 @@ title: Home
   </div>
 </section>
 
-<section>
+<section class="transformation-section-desktop" id="zipcode">
+  <div class="transform-img"></div>
+  <div class="transform-content">
+    <div class="title">
+      <div>Start Your</div>
+      <div>Transformation</div>
+    </div>
+    <div style="align-self: center">
+      <img src="{{ site.cdn_url }}/images/home/vertical-line.svg" alt="" />
+    </div>
+    <div class="zip-code-desktop">Enter ZIP Code to check availibility</div>
+    <input class="zip-code-input-desktop" type="text" placeholder="ZIP Code*" required />
+    <div class="btn-wrapper">
+      <div class="green-button check-avail-btn-desktop">
+        <a class="uppercase" href="https://app.gomethodology.com/onramp/sign-up" rel="noopener noreferrer"
+          target="_blank">
+          <span>CHECK AVAILABILITY</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro-video-section">
   <video class="intro-video" width="100%" height="474px" autoplay loop muted playsinline>
     <source src="{{ site.cdn_url }}/videos/homepage-video-1.mp4" type="video/mp4" />
   </video>
@@ -238,40 +286,45 @@ title: Home
   <div>Ingredients</div>
 </section>
 
-<section class="images-ingredients">
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/Bariani-Olive-Oil.png" height="95px" width="89px" alt="Bariani Olive Oil" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/santa-barbara-organic.png" height="90px" width="90px"
-      alt="Santa Barbara Organic Criolla Chocolate" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/coke-farm-1.png" height="73px" width="90px" alt="Coke Farm" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/lakeside-organic-gardens.png" height="51px" width="101px"
-      alt="Lakeside Organic Gardens" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/stemple-creek.png" height="52px" width="90px" alt="Stemple Creek" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/new-natives.png" height="50px" width="89px" alt="New Natives" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/frog-hollow-farm.png" height="89px" width="89px" alt="Frog Hollow Farm" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/hodo.png" height="53px" width="90px" alt="Hodo" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/riverdog-farm.png" height="89px" width="90px" alt="RiverDog Farm" />
-  </div>
-  <div>
-    <img src="{{ site.cdn_url }}/images/ingredients/first-light-farms.png" height="27px" width="133px" alt="First Light Farms" />
-  </div>
-</section>
+<div class="ingredient-intro-video">
+  <section class="images-ingredients">
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/Bariani-Olive-Oil.png" height="95px" width="89px" alt="Bariani Olive Oil" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/santa-barbara-organic.png" height="90px" width="90px"
+        alt="Santa Barbara Organic Criolla Chocolate" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/coke-farm-1.png" height="73px" width="90px" alt="Coke Farm" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/lakeside-organic-gardens.png" height="51px" width="101px"
+        alt="Lakeside Organic Gardens" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/stemple-creek.png" height="52px" width="90px" alt="Stemple Creek" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/new-natives.png" height="50px" width="89px" alt="New Natives" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/frog-hollow-farm.png" height="89px" width="89px" alt="Frog Hollow Farm" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/hodo.png" height="53px" width="90px" alt="Hodo" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/riverdog-farm.png" height="89px" width="90px" alt="RiverDog Farm" />
+    </div>
+    <div>
+      <img src="{{ site.cdn_url }}/images/ingredients/first-light-farms.png" height="27px" width="133px" alt="First Light Farms" />
+    </div>
+  </section>
+  <video class="intro-video" width="100%" height="575px" autoplay loop muted playsinline>
+    <source src="{{ site.cdn_url }}/videos/homepage-video-1.mp4" type="video/mp4" />
+  </video>
+</div>
 
 <section class="order-now-btn">
   <div class="green-button">
