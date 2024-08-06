@@ -435,17 +435,18 @@
 
       .transform-img {
         background: url(https://d1cbtwb0qnacuk.cloudfront.net/images/home/start-transformation.jpeg);
-        height: 748px;
+        // height: 748px;
         width: 50%;
         background-size: 124%;
         background-position-x: -81px;
+        background-repeat: no-repeat;
       }
 
       .transform-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 748px;
+        height: 579px;
         width: 50%;
         background-color: #36443A;
         gap: 10px;
