@@ -89,19 +89,26 @@
         alt="Methodology logo" />
     </a>
     <nav class="site-nav-desktop">
-      <a>
-        <p>
-          Our Programs
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-              <path d="M1 1L5 5L9 1" stroke="#36443A" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </p>
-      </a>
-      <a>
-        <p>Our story</p>
-      </a>
+      <nav class="navbar">
+        <div class="menu-item">
+            <a href="#">Our Programs</a>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/signature">Signature Program</a>
+                <a href="{{ site.baseurl }}/ultimate">Ultimate Program</a>
+                <a href="{{ site.baseurl }}/postpartum">Post Partum Haute Mom</a>
+                <a href="{{ site.baseurl }}/transformation">Transformation Tribe</a>
+            </div>
+        </div>
+        <a href="{{ site.baseurl }}/ourstory">Our Story</a>
+        <a href="{{ site.baseurl }}/sign-in">Log-In</a>
+        <div class="green-button green-button-style">
+          <a href="{{ site.baseurl }}/#zipcode" rel="noopener noreferrer">
+            <span class="uppercase">
+              order now
+            </span>
+          </a>
+        </div>
+      </nav>
       <a class="user-login-desktop">
         <p>
           Log-In
