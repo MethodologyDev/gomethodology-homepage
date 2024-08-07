@@ -139,6 +139,7 @@
       padding-left: 50px;
       align-items: center;
       width: 50%;
+      margin-top: 0px;
     }
 
     .title {
@@ -172,10 +173,9 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
-        padding: 13px;
         margin: 0 auto;
         width: 80%;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
       }
 
       .benefit {
@@ -202,11 +202,12 @@
     @media screen and (min-width: $on-medium) {
       display: flex;
       flex-direction: row;
+      height: 578px;
 
       .intro-video {
         object-fit: cover;
         width: 50%;
-        height: 578px;
+        height: 100%;
       }
     }
 
