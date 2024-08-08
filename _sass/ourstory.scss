@@ -1,83 +1,214 @@
 .ourstory-page {
-  @include media-query($on-palm) {
+  .story-banner {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/our-story-intro.jpeg");
+    height: 589px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-position-y: -80px;
 
-    .intro-video {
-      object-fit: cover;
+    @include media-query($on-palm) {
+      display: none;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 100px;
+    }
+
+    .title {
+      color: #FFFBF5;
+      text-align: center;
+      font-size: 80px;
+      line-height: 36px;
+      @include font-larken(400);
+    }
+
+    .subtitle {
+      color: #FFFBF5;
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: 0.45px;
+      @include font-poppins(400);
+    }
+  }
+
+  .intro-video {
+    object-fit: cover;
+    position: relative;
+  }
+
+  .press-logo-desktop {
+    @include media-query($on-palm) {
+      display: none;
+    }
+    @media screen and (min-width: $on-medium) {
+      display: block;
+    }
+  }
+
+  /* Hide all controls except play/pause */
+  .intro-video::-webkit-media-controls-timeline,
+  .intro-video::-webkit-media-controls-current-time-display,
+  .intro-video::-webkit-media-controls-time-remaining-display,
+  .intro-video::-webkit-media-controls-volume-slider,
+  .intro-video::-webkit-media-controls-fullscreen-button,
+  .intro-video::-webkit-media-controls-rewind-button,
+  .intro-video::-webkit-media-controls-return-to-realtime-button,
+  .intro-video::-webkit-media-controls-playback-rate-menu-button,
+  .intro-video::-webkit-media-controls-overflow-button,
+  .intro-video::-webkit-media-controls-toggle-closed-captions-button {
+    display: none;
+  }
+
+  .intro-video::-webkit-media-controls-mute-button,
+  .intro-video::-webkit-media-controls-play-button {
+    background-size: 35px;
+  }
+
+  .intro-video::-webkit-media-controls-panel {
+    background: none !important;
+    background-image: none !important;
+  }
+
+  /* For Firefox */
+  .intro-video::-moz-range-track {
+    display: none;
+  }
+
+  /* For IE/Edge */
+  .intro-video::-ms-track {
+    display: none;
+  }
+
+  .hero {
+    top: 0px !important;
+    position: relative;
+
+    @media screen and (min-width: $on-medium) {
+      display: none;
+    }
+
+    p {
+      margin: 0px;
+    }
+
+    .hero-image {
+      height: 435px;
+      width: 100%;
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/lead-image.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 187%;
+      background-position-y: 0px;
+      box-shadow: inset 0px -90px 99px 0px #fff;
+    }
+
+    .text-content {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -33px;
     }
 
-    /* Hide all controls except play/pause */
-    .intro-video::-webkit-media-controls-timeline,
-    .intro-video::-webkit-media-controls-current-time-display,
-    .intro-video::-webkit-media-controls-time-remaining-display,
-    .intro-video::-webkit-media-controls-volume-slider,
-    .intro-video::-webkit-media-controls-fullscreen-button,
-    .intro-video::-webkit-media-controls-rewind-button,
-    .intro-video::-webkit-media-controls-return-to-realtime-button,
-    .intro-video::-webkit-media-controls-playback-rate-menu-button,
-    .intro-video::-webkit-media-controls-overflow-button,
-    .intro-video::-webkit-media-controls-toggle-closed-captions-button {
-      display: none;
+    .julie-image {
+      width: 144px;
+      height: 144px;
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/home/julie3.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 100px;
     }
 
-    .intro-video::-webkit-media-controls-mute-button,
-    .intro-video::-webkit-media-controls-play-button {
-      background-size: 35px;
-    }
-
-    .intro-video::-webkit-media-controls-panel {
-      background: none !important;
-      background-image: none !important;
-    }
-
-    /* For Firefox */
-    .intro-video::-moz-range-track {
-      display: none;
-    }
-
-    /* For IE/Edge */
-    .intro-video::-ms-track {
-      display: none;
-    }
-
-    .hero {
-      top: 0px !important;
-      position: relative;
+    .profile {
+      margin-top: 20px;
+      margin-bottom: 20px;
 
       p {
         margin: 0px;
       }
 
-      .hero-image {
-        height: 435px;
-        width: 100%;
-        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/lead-image.jpeg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 187%;
-        background-position-y: 0px;
-        box-shadow: inset 0px -90px 99px 0px #fff;
+      .name {
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        line-height: 20px;
+        @include font-larken(400);
       }
 
-      .text-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: -33px;
+      .position {
+        color: #000;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 5px;
+        @include font-poppins(400);
+      }
+    }
+
+    .title {
+      color: #354239;
+      text-align: center;
+      font-size: 34px;
+      line-height: 36px;
+      padding-left: 30px;
+      padding-right: 30px;
+      @include font-larken(400);
+    }
+
+    .description {
+      color: #36443A;
+      text-align: center;
+      font-size: 15px;
+      line-height: 23px;
+      margin-bottom: 17px;
+      padding-left: 45px;
+      padding-right: 45px;
+      @include font-poppins(400);
+    }
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row;
+
+    @include media-query($on-palm) {
+      display: none;
+    }
+
+    @media screen and (min-width: $on-medium) {
+      display: flex;
+    }
+
+    .about-section {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .model-image {
+        width: 100%;
+        height: 455px;
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/model.jpeg");
+        background-size: cover;
       }
 
       .julie-image {
-        width: 144px;
-        height: 144px;
+        width: 307px;
+        height: 307px;
         background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/home/julie3.png");
         background-position: center;
         background-repeat: no-repeat;
-        border-radius: 100px;
+        border-radius: 160px;
+        background-size: 100%;
       }
 
       .profile {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 20px;
 
         p {
@@ -85,56 +216,44 @@
         }
 
         .name {
-          color: #000;
+          color: #36443A;
           text-align: center;
-          font-size: 24px;
-          line-height: 20px;
+          font-size: 48px;
+          line-height: 31px;
           @include font-larken(400);
         }
 
         .position {
           color: #000;
-          font-size: 12px;
-          line-height: 20px;
           margin-top: 5px;
+          color: #36443A;
+          font-size: 16px;
+          line-height: 31px;
           @include font-poppins(400);
         }
       }
 
-      .title {
-        color: #354239;
-        text-align: center;
-        font-size: 34px;
-        line-height: 36px;
-        padding-left: 30px;
-        padding-right: 30px;
-        @include font-larken(400);
+      .content-width {
+        width: 80%;
+        margin-top: 40px;
       }
 
-      .description {
-        color: #36443A;
-        text-align: center;
-        font-size: 15px;
-        line-height: 23px;
-        margin-bottom: 17px;
-        padding-left: 45px;
-        padding-right: 45px;
-        @include font-poppins(400);
+      .content-gap {
+        gap: 22px;
+        display: flex;
+        flex-direction: column;
       }
-    }
 
-    .details-section {
-      padding: 20px;
-
-      p {
-        margin: 0px;
+      .content-gap-text {
+        gap: 35px;
+        display: flex;
+        flex-direction: column;
       }
 
       .normal-text {
         color: #36443A;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 20px;
-        margin-bottom: 20px;
         @include font-poppins(400);
       }
 
@@ -145,20 +264,109 @@
         line-height: 31px;
         margin-bottom: 20px;
         @include font-larken(400);
+
+        @media screen and (min-width: $on-medium) {
+          color: #36443A;
+          font-size: 36px;
+          font-style: italic;
+          line-height: 54px;
+          @include font-larken(400);
+        }
+      }
+
+      .img-model {
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/model-2-jar.jpeg");
+        width: 100%;
+        height: 746px;
+        background-size: 100%;
+        background-position-y: -100px;
       }
     }
 
-    .model-image {
-      width: 100%;
-      height: 455px;
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/model.jpeg");
-      background-size: cover;
+    .video-div {
+      width: 50%;
+    }
+  }
+
+  .footer-text {
+    @include media-query($on-palm) {
+      display: none;
+    }
+    @media screen and (min-width: $on-medium) {
+      display: block;
+    }
+    p {
+      color: #36443A;
+      text-align: center;
+      font-size: 28px;
+      line-height: 40px;
+      @include font-larken(400);
+    }
+  }
+
+  .hide-desktop {
+    @media screen and (min-width: $on-palm) {
+      display: none;
     }
 
-    .btn-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-top: 0px;
+    @media screen and (min-width: $on-medium) {
+      display: block;
     }
+  }
+
+  .video-section {
+    @media screen and (min-width: $on-medium) {
+      display: none;
+    }
+  }
+
+  .details-section {
+    padding: 20px;
+    @media screen and (min-width: $on-medium) {
+      display: none;
+    }
+
+    p {
+      margin: 0px;
+    }
+
+    .normal-text {
+      color: #36443A;
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      @include font-poppins(400);
+    }
+
+    .large-italic {
+      color: #36443A;
+      font-size: 24px;
+      font-style: italic !important;
+      line-height: 31px;
+      margin-bottom: 20px;
+      @include font-larken(400);
+    }
+  }
+
+  .model-image {
+    width: 100%;
+    height: 455px;
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/ourstory/model.jpeg");
+    background-size: cover;
+    // @media screen and (min-width: $on-medium) {
+    //   display: none;
+    // }
+  }
+
+  .model-image-desktop {
+    @media screen and (min-width: $on-medium) {
+      display: none;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
   }
 }
