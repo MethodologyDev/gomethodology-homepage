@@ -594,3 +594,12 @@
   display: flex;
   flex-direction: row;
 }
+
+
+// Display properties
+
+.hidden-for-mobile {
+  @media screen and (max-width: $on-medium) {
+    display: none;
+  }
+}
