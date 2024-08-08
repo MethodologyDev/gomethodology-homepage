@@ -603,3 +603,9 @@
     display: none;
   }
 }
+
+.hidden-for-desktop {
+  @media screen and (min-width: $on-medium) {
+    display: none;
+  }
+}
