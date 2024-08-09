@@ -438,7 +438,7 @@
         background: url(https://d1cbtwb0qnacuk.cloudfront.net/images/home/start-transformation.jpeg);
         // height: 748px;
         width: 50%;
-        background-size: 124%;
+        background-size: cover;
         background-position-x: -81px;
         background-repeat: no-repeat;
       }
@@ -1074,7 +1074,7 @@
     }
 
     .text-section {
-      width: 30%;
+      width: 40%;
     }
 
     .image-section {
