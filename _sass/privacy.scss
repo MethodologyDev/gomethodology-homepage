@@ -1,0 +1,50 @@
+.privacy-page {
+  margin-top: 50px;
+  .title .main-heading {
+    font-size: 48px;
+    line-height: 115%;
+    @include font-larken(300);
+  }
+  .title p {
+    font-size: 20px;
+    line-height: 135%;
+    @include font-poppins(400);
+  }
+  .bottom-section-padding {
+    margin-bottom: 48px;
+  }
+  .privacy-wrapper {
+    max-width: 1280px;
+    padding: 0 64px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .section-main .block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  .section-main .block h4 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 135%;
+    @include font-larken(400);
+  }
+  .section-main .block div {
+    @include font-poppins(400);
+    font-size: 20px;
+    line-height: 135%;
+  }
+  .section-main .block p {
+    word-break: break-word;
+    margin-top: 10px;
+  }
+  .section-main .block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+}
