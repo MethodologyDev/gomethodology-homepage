@@ -26,13 +26,4 @@
 
 - duration: "8 Weeks"
   title: "Digital Coaching"
-  plus_duration: "First 4 Weeks"
-  plus_title: "With Food"
-  option1_days: "4 days"
-  option1_occurrence: "per week"
-  option1_detail: "Breakfast, Lunch, Dinner & Snacks"
-  option2_detail_1: ""
-  option2_days: "5 days"
-  option2_occurrence: "per week"
-  option2_detail: "Lunch, Dinner & Snacks"
-  option2_detail_2: "(No Breakfast)"
+  empty: true
