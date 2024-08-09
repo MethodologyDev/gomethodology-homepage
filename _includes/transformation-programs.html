@@ -1,40 +1,50 @@
 <div class="variation-scroll" id="variation-slider">
   {% for item in site.data.transformation-programs %}
-    <div class="variation-item">
-      <div class="item-flex">
-        <div>
-          <p class="small-text">{{ item.duration }}</p>
-          <p class="large-text">{{ item.title }}</p>
+  <div class="variation-item">
+    <div class="item-flex">
+      <div>
+        <p class="small-text">{{ item.duration }}</p>
+        <p class="large-text">{{ item.title }}</p>
+        {% if item.empty %}
+        <div class="empty-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="2" viewBox="0 0 96 2" fill="none">
+            <path d="M1 1H95" stroke="#36443A" stroke-linecap="round" />
+          </svg>
+          <p class="empty-text">No food</p>
         </div>
-        <img src="{{ site.cdn_url }}/images/transformation/plus-icon.svg" alt="plus icon" />
-        <div>
-          <p class="small-text">{{ item.plus_duration }}</p>
-          <p class="large-text">{{ item.plus_title }}</p>
+        {% endif %}
+      </div>
+      {% if item.plus_duration %}
+      <img src="{{ site.cdn_url }}/images/transformation/plus-icon.svg" alt="plus icon" />
+      <div>
+        <p class="small-text">{{ item.plus_duration }}</p>
+        <p class="large-text">{{ item.plus_title }}</p>
+      </div>
+      <div class="option">
+        <div class="col-div right-col">
+          <p class="days">{{ item.option1_days }}</p>
+          <p class="occurrence">{{ item.option1_occurrence }}</p>
         </div>
-        <div class="option">
-          <div class="col-div right-col">
-            <p class="days">{{ item.option1_days }}</p>
-            <p class="occurrence">{{ item.option1_occurrence }}</p>
-          </div>
-          <img src="{{ site.cdn_url }}/images/transformation/vertical-divider.svg" alt="null" />
-          <div class="col-div left-col">
-            <p class="food-detail">{{ item.option1_detail }}</p>
-            <p class="food-detail-bold">{{ item.option1_detail_1 }}</p>
-          </div>
-        </div>
-        <div class="option">
-          <div class="col-div right-col">
-            <p class="days">{{ item.option2_days }}</p>
-            <p class="occurrence">{{ item.option2_occurrence }}</p>
-          </div>
-          <img src="{{ site.cdn_url }}/images/transformation/vertical-divider.svg" alt="null" />
-          <div class="col-div left-col">
-            <p class="food-detail">{{ item.option2_detail }}</p>
-            <p class="food-detail-bold">{{ item.option2_detail_2 }}</p>
-          </div>
+        <img src="{{ site.cdn_url }}/images/transformation/vertical-divider.svg" alt="null" />
+        <div class="col-div left-col">
+          <p class="food-detail">{{ item.option1_detail }}</p>
+          <p class="food-detail-bold">{{ item.option1_detail_1 }}</p>
         </div>
       </div>
+      <div class="option">
+        <div class="col-div right-col">
+          <p class="days">{{ item.option2_days }}</p>
+          <p class="occurrence">{{ item.option2_occurrence }}</p>
+        </div>
+        <img src="{{ site.cdn_url }}/images/transformation/vertical-divider.svg" alt="null" />
+        <div class="col-div left-col">
+          <p class="food-detail">{{ item.option2_detail }}</p>
+          <p class="food-detail-bold">{{ item.option2_detail_2 }}</p>
+        </div>
+      </div>
+      {% endif %}
     </div>
+  </div>
   {% endfor %}
 </div>
 
@@ -43,7 +53,7 @@
   <div id="variation-scroll-element" class="scroll-container">
     <div class="content2">
       {% for item in site.data.transformation-programs %}
-        <div class="variation-scroll-item"></div>
+      <div class="variation-scroll-item"></div>
       {% endfor %}
     </div>
   </div>
@@ -85,5 +95,26 @@
     width: 200px;
     height: 0px;
     margin-right: 10px;
+  }
+
+  .empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .empty-text {
+    width: 100%;
+    text-align: center;
+    color: #36443A;
+    text-align: center;
+    font-family: 'Poppins', 'Helvetica Neue', sans-serif !important;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 38px;
+    text-transform: capitalize;
   }
 </style>

@@ -523,9 +523,8 @@
     background-size: cover;
     background-position-y: -89px;
     @media screen and (min-width: $on-medium) {
-      height: auto;
+      height: 576px;
       background-size: 100%;
-      // background-position-y: -154px;
       background-repeat: no-repeat;
       width: 40%;
     }
