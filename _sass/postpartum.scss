@@ -1,4 +1,226 @@
 .postpartum-page {
+  @media screen and (min-width: $on-medium) {
+    .hero {
+      display: flex;
+      height: 589px;
+
+      .lead-image {
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/lead-image.jpeg");
+        width: 60%;
+        height: 100%;
+        background-size: cover;
+      }
+
+      .text-content {
+        width: 40%;
+        background: #36443A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title {
+        color: #FFFBF5;
+        text-align: center;
+        font-size: 42px;
+        line-height: 47px;
+        width: 64%;
+        @include font-larken(400);
+      }
+
+      .description {
+        color: #FFFBF5;
+        text-align: center;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 17px;
+        padding-left: 45px;
+        padding-right: 45px;
+        width: 50%;
+        @include font-poppins(400);
+      }
+    }
+
+    .benefits-section-container {
+      display: flex;
+
+      .product-1-image {
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/method-image-1.jpeg");
+        width: 40%;
+        background-size: cover;
+      }
+
+      .third-section {
+        width: 60%;
+        background-color: #C9D5C8;
+        padding: 40px;
+        
+        .title-container {
+          text-align: center;
+        }
+
+        &-title {
+          color: #36443A;
+          text-align: center;
+          font-size: 42px;
+          line-height: 47px;
+          display: inline-block;
+          margin-left: 5px;
+          @include font-larken(400);
+        }
+
+        .benefit-list-wrapper {
+          padding-left: 38px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+
+          &-benefit {
+            gap: 10px;
+            display: flex;
+            margin-bottom: 20px;
+
+            p {
+              font-size: 18px;
+              line-height: 25px;
+              color: $darkColor;
+              width: 85%;
+              @include font-poppins(400);
+            }
+          }
+        }
+        .btn-wrapper {
+          .green-button {
+            background-color: #F9FCFB;
+          }
+        }
+      }
+    }
+
+    .optimize-section-desktop {
+      padding: 50px;
+      background:
+        linear-gradient(0deg, rgba(54, 68, 58, 0.90) 0%, rgba(54, 68, 58, 0.90) 100%),
+        url(https://d1cbtwb0qnacuk.cloudfront.net/images/home/BentoColourShowcase_Green_130.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .title-container {
+        .title {
+          color: #FFFBF5;
+          text-align: center;
+          font-size: 42px;
+          line-height: 47px;
+          @include font-larken(400);
+        }
+
+        svg {
+          vertical-align: middle;
+        }
+      }
+
+      .optimizations-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+
+        .optimization {
+          width: 20%;
+          text-align: center;
+
+          .large-text {
+            color: #FFF;
+            text-align: center;
+            font-size: 48px;
+            line-height: 35px;
+            margin-bottom: 10px;
+            @include font-larken(400);
+          }
+    
+          .medium-text {
+            color: #FFF;
+            font-size: 32px;
+            line-height: 27px;
+            @include font-larken(400);
+          }
+        }
+      }
+    }
+
+    .eat-quick-section-container {
+      display: flex;
+
+      .product-2-image {
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/method-image-2.jpeg");
+        width: 50%;
+        background-size: cover;
+      }
+
+      .eat-quickly-section {
+        width: 50%;
+        padding: 50px;
+        text-align: center;
+
+        .title {
+          color: #36443A;
+          text-align: center;
+          font-size: 42px;
+          line-height: 47px;
+          @include font-larken(400);
+          margin-bottom: 30px;
+        }
+        
+        .quick-fact {
+          p {
+            width: 200px;
+            margin: 10px auto 20px;
+            color: #36443A;
+            text-align: center;
+            font-size: 18px;
+            line-height: 25px;
+            @include font-poppins(400);
+          }
+        }
+      }
+    }
+
+    .section-good-planet {
+      background-color: #F9FCFB;
+      padding: 50px;
+
+      .title {
+        color: #36443A;
+        font-size: 42px;
+        line-height: 41px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        @include font-larken(400);
+      }
+
+      .planet-details {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+        div {
+          width: 20%;
+          text-align: center;
+        }
+
+        img {
+          border-radius: 50%;
+          width: 166px;
+          height: 166px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+
   @include media-query($on-palm) {
     .hero {
       top: 0px !important;
@@ -68,7 +290,7 @@
       padding-top: 13px;
       padding-bottom: 35px;
 
-      &-title {
+      .third-section-title {
         margin: 1px;
         font-size: 34px;
         text-align: center;
@@ -267,7 +489,7 @@
         }
 
         img {
-          border-radius: 100px;
+          border-radius: 50%;
           height: 100px;
           width: 100px;
         }
@@ -284,74 +506,6 @@
       .btn-container {
         margin-top: 30px;
       }
-    }
-
-    .how-it-works-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: #FFFBF5;
-      padding-top: 35px;
-      padding-bottom: 35px;
-
-      &-title {
-        margin: 1px;
-        font-size: 34px;
-        text-align: center;
-        line-height: 38px;
-        color: $darkColor;
-        @include font-larken(400);
-      }
-
-      .benefit-list-wrapper {
-        padding-left: 38px;
-        margin-bottom: 40px;
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-
-        &-benefit {
-          gap: 10px;
-          display: flex;
-          align-items: center;
-
-          p {
-            margin: 0px;
-            font-size: 18px;
-            line-height: 25px;
-            color: $darkColor;
-            width: 70%;
-            @include font-poppins(400);
-          }
-        }
-
-        .number {
-          background: #C9D5C8;
-          stroke-width: 1px;
-          stroke: #36443A;
-          height: 40px;
-          width: 40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 100px;
-        }
-      }
-
-      .btn-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 0px;
-      }
-    }
-
-    .model1-section {
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
-      width: 100%;
-      height: 583px;
-      background-size: 105%;
     }
 
     .our-programs {
@@ -456,85 +610,6 @@
         padding-left: 23px;
       }
     }
-
-    .model2-section {
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-2.jpeg");
-      background-size: cover;
-      height: 409px;
-      position: relative;
-      top: -35px;
-      background-position-y: -140px;
-    }
-
-    .gift-offer-section {
-      background: #36443A;
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 50px;
-      box-shadow: 0px 57px 60px 117px #36443A;
-      position: relative;
-      top: -40px;
-      height: 318px;
-
-      .top-shadow {
-        width: 100%;
-        height: 1px;
-        box-shadow: 0px -22px 60px 117px #36443A;
-        top: 30px;
-        background: #36443A;
-        position: relative;
-      }
-
-      p {
-        margin: 0;
-        width: 80%;
-      }
-
-      .gift-title {
-        color: #FFFBF5;
-        text-align: center;
-        font-size: 34px;
-        margin-top: 22px;
-        z-index: 1;
-        // position: relative;
-        // top: -40px;
-        // box-shadow: 0px -22px 60px 117px #36443A;
-        @include font-larken(400);
-      }
-
-      .details {
-        color: #C9D5C8;
-        text-align: center;
-        font-size: 15px;
-        line-height: 155%;
-        margin-top: 22px;
-        top: -35px;
-        position: relative;
-        @include font-poppins(400);
-      }
-
-      .details-bold {
-        color: #C9D5C8;
-        font-size: 18px;
-        font-style: normal;
-        line-height: 155%;
-        top: -35px;
-        position: relative;
-        @include font-poppins(600);
-      }
-    }
-
-    .model1-cropped {
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
-      background-size: 100%;
-      position: relative;
-      background-position-y: -57px;
-      height: 349.401px;
-    }
-
 
     .signature-program {
       background: #C9D5C8;
@@ -688,6 +763,458 @@
             margin-top: 25px;
           }
         }
+      }
+    }
+  }
+
+  .how-it-works-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFBF5;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    &-title {
+      margin: 1px;
+      font-size: 34px;
+      text-align: center;
+      line-height: 38px;
+      color: $darkColor;
+      @include font-larken(400);
+    }
+
+    .benefit-list-wrapper {
+      padding-left: 38px;
+      margin-bottom: 40px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+
+      &-benefit {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0px;
+          font-size: 18px;
+          line-height: 25px;
+          color: $darkColor;
+          width: 70%;
+          @include font-poppins(400);
+        }
+      }
+
+      .number {
+        background: #C9D5C8;
+        stroke-width: 1px;
+        stroke: #36443A;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+      }
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+    }
+  }
+
+  .model1-section {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
+    width: 100%;
+    height: 583px;
+    background-size: 105%;
+  }
+
+  .our-programs {
+    position: relative;
+    top: -35px;
+    background-color: #C9D5C8;
+    padding-bottom: 35px;
+    padding-top: 35px;
+
+    .container {
+      padding-bottom: 0px;
+    }
+
+    .signature-title {
+      padding-top: 0px;
+
+      p {
+        margin: 0;
+        color: #36443A;
+        text-align: center;
+        font-size: 34px;
+        line-height: 41px;
+        @include font-larken(400);
+      }
+    }
+
+    .signature-desc {
+      margin-top: 12px;
+
+      p {
+        margin: 0;
+        color: #36443A;
+        text-align: center;
+        font-size: 15px;
+        line-height: 23px;
+        @include font-poppins(400);
+      }
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .title {
+      padding-top: 30px;
+      color: $darkColor;
+      text-align: center;
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    .program {
+      display: flex;
+      flex-direction: row;
+      padding-right: 23px;
+      padding-left: 23px;
+      align-items: center;
+      column-gap: 26px;
+      padding-top: 25px;
+      padding-bottom: 13px;
+    }
+
+    .program-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .program-image-style {
+      height: 143px;
+      width: 152px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .program-title {
+      color: $darkColor;
+      font-size: 5vw;
+    }
+
+    .program-desc {
+      color: $darkColor;
+      font-size: 3vw;
+    }
+
+    .tell-more {
+      display: flex;
+      flex-direction: row;
+      color: $darkColor;
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+
+    .arrow-right {
+      width: 4.5rem;
+      padding-left: 8px;
+    }
+
+    .divider {
+      display: flex;
+      padding-left: 23px;
+    }
+  }
+
+  .model2-section {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-2.jpeg");
+    background-size: cover;
+    height: 409px;
+    position: relative;
+    top: -35px;
+    background-position-y: -140px;
+  }
+
+  .gift-offer-section {
+    background: #36443A;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    box-shadow: 0px 57px 60px 117px #36443A;
+    position: relative;
+    top: -40px;
+    height: 318px;
+
+    .top-shadow {
+      width: 100%;
+      height: 1px;
+      box-shadow: 0px -22px 60px 117px #36443A;
+      top: 30px;
+      background: #36443A;
+      position: relative;
+    }
+
+    p {
+      margin: 0;
+      width: 80%;
+    }
+
+    .gift-title {
+      color: #FFFBF5;
+      text-align: center;
+      font-size: 34px;
+      margin-top: 22px;
+      z-index: 1;
+      // position: relative;
+      // top: -40px;
+      // box-shadow: 0px -22px 60px 117px #36443A;
+      @include font-larken(400);
+    }
+
+    .details {
+      color: #C9D5C8;
+      text-align: center;
+      font-size: 15px;
+      line-height: 155%;
+      margin-top: 22px;
+      top: -35px;
+      position: relative;
+      @include font-poppins(400);
+    }
+
+    .details-bold {
+      color: #C9D5C8;
+      font-size: 18px;
+      font-style: normal;
+      line-height: 155%;
+      top: -35px;
+      position: relative;
+      @include font-poppins(600);
+    }
+  }
+
+  .model2-section {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-2.jpeg");
+    background-size: cover;
+    height: 409px;
+    position: relative;
+    top: -35px;
+    background-position-y: -140px;
+  }
+
+  .results-section {
+    background: #C9D5C8;
+    padding-bottom: 30px;
+    position: relative;
+    top: -10px;
+
+    p {
+      margin: 0px;
+    }
+
+    .title {
+      color: #36443A;
+      text-align: center;
+      font-size: 34px;
+      line-height: 41px;
+      padding-top: 35px;
+      padding-left: 55px;
+      padding-right: 55px;
+      @include font-larken(400);
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+
+  .sixth {
+    padding: 0;
+
+    &__banner-image {
+      width: 100%;
+
+      img {
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .container-1200 {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .benefit-list-wrapper {
+      display: block;
+      margin-bottom: 24px;
+
+      .benefits {
+        flex-basis: 100%;
+
+        li {
+          p {
+            margin: 0;
+            padding: 0;
+            padding-left: 16px;
+            font-size: 20px;
+            line-height: 26px;
+          }
+
+          .checked-icon {
+            min-width: 20px;
+            width: 20px;
+            margin-top: 2px;
+
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+
+    .title {
+      h3 {
+        font-size: 34px;
+        line-height: 41px;
+        padding-bottom: 16px;
+        margin: 0;
+      }
+    }
+
+    &__testimonials {
+      padding: 0;
+
+      &-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &-dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+        background-color: $darkColor;
+        border-radius: 50%;
+        opacity: .3;
+        transition: all .3s;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__testimonial {
+      &-body {
+        margin-top: -17px;
+
+        pre {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  .model1-cropped {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/postpartum/model-1.png");
+    background-size: 100%;
+    position: relative;
+    background-position-y: -57px;
+    height: 349.401px;
+  }
+}
+
+
+@media screen and (min-width: $on-medium) {
+  .postpartum-page {
+    .how-it-works-section-container {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .how-it-works-section {
+        .btn-wrapper {
+          margin-bottom: 50px;
+        }
+        width: 60%;
+  
+        &-title {
+          font-size: 42px;
+        }
+  
+        .benefit-list-wrapper {
+          margin-top: 40px;
+          gap: 30px;
+        }
+      }
+  
+      .model1-section {
+        width: 40%;
+        background-size: cover;
+      }
+    }
+    
+    .gift-offer-section-container {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .gift-offer-section {
+        width: 60%;
+        box-shadow: none;
+        top: -35px;
+        height: auto;
+
+        .gift-title {
+          font-size: 42px;
+          margin-top: 40px;
+        }
+      }
+
+      .model2-section {
+        width: 40%;
+        background-size: cover;
+        height: inherit;
+        top: -35px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .results-section-container {
+      display: flex;
+      position: relative;
+      top: -35px;
+      .results-section {
+        width: 60%;
+        top: 0px;
+      }
+      .model1-cropped {
+        width: 40%;
+        background-size: cover;
+        object-fit: cover;
+        height: inherit;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
   }

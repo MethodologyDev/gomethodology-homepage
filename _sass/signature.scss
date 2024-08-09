@@ -1,4 +1,160 @@
 .signature-page {
+  @media screen and (min-width: $on-medium) {
+    .hero {
+      display: flex;
+      height: 589px;
+
+      .intro-video {
+        width: 60%;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      .text-content {
+        width: 40%;
+        background: #36443A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .title {
+        color: #FFFBF5;
+        text-align: center;
+        font-size: 42px;
+        line-height: 47px;
+        width: 64%;
+        @include font-larken(400);
+      }
+  
+      .description {
+        color: #FFFBF5;
+        text-align: center;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 17px;
+        padding-left: 45px;
+        padding-right: 45px;
+        width: 50%;
+        @include font-poppins(400);
+      }
+    }
+
+    .signature-features-slider-container {
+      display: flex;
+
+      .signature-features-slider {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 0;
+
+        .feature-container {
+          text-align: center;
+          width: 30%;
+
+          p {
+            width: 70%;
+            margin: 0 auto;
+          }
+          // max-width: 210px;
+        }
+
+        .btn-container {
+          flex: 0 0 100%;
+          text-align: center;
+          margin-top: 20px;
+
+          .green-button {
+            width: 180px;
+          }
+        }
+      }
+
+      .intro-video {
+        object-fit: cover;
+        width: 40%;
+        height: 675px;
+        // height: 675px;
+      }
+    }
+
+    .signature-program {
+      background: #C9D5C8;
+      padding-bottom: 50px;
+
+      .signature-title {
+        padding-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 10px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 42px;
+          line-height: 49px;
+          @include font-larken(400);
+        }
+      }
+
+      .signature-desc {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 5px;
+
+        p {
+          margin: 0;
+          color: #36443A;
+          text-align: center;
+          font-size: 15px;
+          line-height: 23px;
+          @include font-poppins(400);
+        }
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+    }
+
+    .results-section-container {
+      display: flex;
+
+      .results-image {
+        width: 40%;
+        height: 576px;
+        object-fit: cover;
+      }
+
+      .results-section {
+        background: #36443A;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+          color: #FFFBF5;
+          text-align: center;
+          font-size: 42px;
+          line-height: 47px;
+          width: 50%;
+          @include font-larken(400);
+        }
+      }
+    }
+  }
   @include media-query($on-palm) {
     .hero {
       top: 0px !important;
@@ -42,10 +198,13 @@
       padding-bottom: 50px;
       margin-top: 25px;
 
-      p {
-        margin: 0;
-        color: #36443A;
+      .feature-container {
         text-align: center;
+      }
+    
+      p {
+        margin: 0 auto;
+        color: #36443A;
         font-size: 15px;
         line-height: 23px;
         width: 55%;
@@ -57,7 +216,7 @@
         height: 71px;
       }
 
-      div {
+      .green-button {
         margin-top: 20px;
       }
     }
