@@ -3,87 +3,149 @@ layout: careers
 permalink: /careers
 ---
 
-<section class="hero"></section>
+<section class="mobile">
+  <section class="hero"></section>
 
-<section class="title-section">
-  <p>Open Jobs</p>
-  <section class="btn-wrapper">
-    <div class="green-button">
-      <a href="{{ site.baseurl }}/" rel="noopener noreferrer">
-        <span class="uppercase">
-          See Open Jobs
-        </span>
-      </a>
-    </div>
+  <section class="title-section">
+    <p>Open Jobs</p>
+    <section class="btn-wrapper">
+      <div class="green-button">
+        <a href="{{ site.baseurl }}/" rel="noopener noreferrer">
+          <span class="uppercase">
+            See Open Jobs
+          </span>
+        </a>
+      </div>
+    </section>
+    <img src="{{ site.cdn_url }}/images/icons/icon-vertical-dark.svg" />
   </section>
-  <img src="{{ site.cdn_url }}/images/icons/icon-vertical-dark.svg" />
-</section>
 
-<section class="medium-text">
-  <p>Methodology is a luxury, sustainable meal prep service clinically validated by Stanford University.
-  </p>
-  <p>We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a closed-loop supply chain with as close to zero waste as possible.</p>
-</section>
-
-<section class="large-text">
-  <p>Our headquarters is based in</p>
-  <p><i>Concord, California.</i> We </p>
-  <p>currently deliver throughout</p>
-  <p>the 48 states.</p>
-</section>
-
-<section class="image-1"></section>
-
-<section class="text-container">
   <section class="medium-text">
-    <p>All of our culinary and warehouse roles are based in Concord, California, so if you'd like to join one of these teams you must be able to work from Concord. Our corporate roles are fully remote and spread throughout the world.
+    <p>Methodology is a luxury, sustainable meal prep service clinically validated by Stanford University.
     </p>
-    <p>
-      We have a hospitality-driven culture and are looking for teammates with a hospitality, service-oriented mindset.
-    </p>
+    <p>We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a closed-loop supply chain with as close to zero waste as possible.</p>
   </section>
 
   <section class="large-text">
-    <p>
-      We're hiring for positions across the business and would love to hear from mission-aligned people with food industry (especially fine dining) experience who want to grow with us long-term.
+    <p>Our headquarters is based in</p>
+    <p><i>Concord, California.</i> We </p>
+    <p>currently deliver throughout</p>
+    <p>the 48 states.</p>
+  </section>
+
+  <section class="image-1"></section>
+
+  <section class="text-container">
+    <section class="medium-text">
+      <p>All of our culinary and warehouse roles are based in Concord, California, so if you'd like to join one of these teams you must be able to work from Concord. Our corporate roles are fully remote and spread throughout the world.
+      </p>
+      <p>
+        We have a hospitality-driven culture and are looking for teammates with a hospitality, service-oriented mindset.
+      </p>
+    </section>
+
+    <section class="large-text">
+      <p>
+        We're hiring for positions across the business and would love to hear from mission-aligned people with food industry (especially fine dining) experience who want to grow with us long-term.
+      </p>
+    </section>
+  </section>
+
+  <section class="button-container">
+    <section class="btn-wrapper">
+      <div class="green-button">
+        <a href="{{ site.baseurl }}/" rel="noopener noreferrer">
+          <span class="uppercase">
+            See Open Jobs
+          </span>
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <section class="image-2"></section>
+
+  <section class="accordion-section">
+    <p class="header-title">
+      Roles based in Concord, <i>California</i>
     </p>
-  </section>
-</section>
-
-<section class="button-container">
-  <section class="btn-wrapper">
-    <div class="green-button">
-      <a href="{{ site.baseurl }}/" rel="noopener noreferrer">
-        <span class="uppercase">
-          See Open Jobs
-        </span>
-      </a>
-    </div>
-  </section>
-</section>
-
-<section class="image-2"></section>
-
-<section class="accordion-section">
-  <p class="header-title">
-    Roles based in Concord, <i>California</i>
-  </p>
-  <section class="opportunity-section">
-    {% for item in site.data.career %}
-    <div class="accordion-item">
-      <input type="checkbox" id="accordion{{ forloop.index }}" class="accordion-toggle">
-      <label for="accordion{{ forloop.index }}" class="item">
-        <p class="title">{{ item.title }}</p>
-        <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-plus" />
-        <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-minus" />
-      </label>
-      <div class="submenu">
-        <div class="submenu-item">
-          <p>{{ item.content }}</p>
+    <section class="opportunity-section">
+      {% for item in site.data.career %}
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion{{ forloop.index }}" class="accordion-toggle">
+        <label for="accordion{{ forloop.index }}" class="item">
+          <p class="title">{{ item.title }}</p>
+          <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-plus" />
+          <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-minus" />
+        </label>
+        <div class="submenu">
+          <div class="submenu-item">
+            <p>{{ item.content }}</p>
+          </div>
         </div>
       </div>
+      <hr />
+      {% endfor %}
+    </section>
+  </section>
+</section>
+
+<section class="desktop">
+  <section class="lead-container">
+    <section class="flex-container">
+      <section class="hero"></section>
+      <section class="jobs-container">
+        <p>Open Jobs</p>
+        <section class="btn-wrapper">
+          <div class="green-button">
+            <a href="{{ site.baseurl }}/" rel="noopener noreferrer">
+              <span class="uppercase">
+                See Open Jobs
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="section-socialmedia">
+          <p class="description">Follow us on social media</p>
+          <div class="sm-icon-container">
+            <img width="39px" height="38px" src="{{ site.cdn_url }}/images/home/icon-ig.svg" />
+            <img width="40px" height="38px" src="{{ site.cdn_url }}/images/home/icon-fb.svg" />
+            <img width="47px" height="43px" src="{{ site.cdn_url }}/images/home/icon-tiktok.svg" />
+            <img width="53px" height="47px" src="{{ site.cdn_url }}/images/home/icon-yt.svg" />
+          </div>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section class="first-section">
+    <div class="text-container">
+      <p class="normal-text">
+        Methodology is a luxury, sustainable meal prep service clinically validated by Stanford University.
+      </p>
+      <p class="normal-text">
+        We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a closed-loop supply chain with as close to zero waste as possible.
+      </p>
+      <p class="bold-text">
+        Our headquarters is based in Concord, California. We currently deliver throughout the 48 states.
+      </p>
     </div>
-    <hr />
-    {% endfor %}
+    <div class="image-section">
+      <section class="image-1"></section>
+    </div>
+  </section>
+
+  <section class="second-section">
+    <div class="image-section">
+      <section class="image-2"></section>
+    </div>
+    <div class="text-container">
+      <p class="normal-text">All of our culinary and warehouse roles are based in Concord, California, so if you'd like to join one of these teams you must be able to work from Concord. Our corporate roles are fully remote and spread throughout the world.</p>
+      <p class="normal-text">
+        We have a hospitality-driven culture and are looking for teammates with a hospitality, service-oriented mindset.
+      </p>
+      <p class="bold-text">
+        We're hiring for positions across the business and would love to hear from mission-aligned people with food industry (especially fine dining) experience who want to grow with us long-term.
+      </p>
+    </div>
   </section>
 </section>

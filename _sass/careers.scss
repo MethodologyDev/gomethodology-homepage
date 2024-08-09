@@ -1,263 +1,416 @@
 .careers-page {
-  @include media-query($on-palm) {
-    .hero {
-      height: 419px;
-      width: 100%;
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/lead.jpeg");
-      background-position-x: -125px;
-      background-size: 183%;
-      background-repeat: no-repeat;
-      background-position-y: -103px;
+
+  // @include media-query($on-palm) {
+  .hero {
+    height: 419px;
+    width: 100%;
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/lead.jpeg");
+    background-position-x: -125px;
+    background-size: 183%;
+    background-repeat: no-repeat;
+    background-position-y: -103px;
+
+    @media screen and (min-width: $on-medium) {
+      // display: none;
+      height: 638px;
+      background-size: cover;
+      background-position-x: 0px;
+      background-position-y: 0px;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 638px;
+  }
+
+  .lead-container {
+    @include media-query($on-palm) {
+      display: none;
     }
 
-    .title-section {
+    .jobs-container {
+      width: 40%;
+      background: #36443A;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      margin-top: 17px;
+      padding-top: 50px;
 
       p {
-        color: #36443A;
+        color: #FFFBF5;
         text-align: center;
-        font-size: 34px;
+        font-size: 42px;
         @include font-larken(400);
       }
 
       .btn-wrapper {
         display: flex;
         justify-content: center;
-        margin-top: 5px;
-        margin-bottom: 18px;
+        margin-top: 20px;
       }
     }
+  }
 
-    .faq-section {
-      margin-top: 40px;
+  .section-socialmedia {
+    margin-top: 50px;
+
+    .description {
+      color: #FFF;
+      text-align: center;
+      font-size: 17px !important;
+      line-height: 23px;
       padding-left: 40px;
       padding-right: 40px;
-
-      hr {
-        margin-top: 10px;
-      }
-
-      .accordion-item {
-        .accordion-toggle {
-          display: none;
-        }
-
-        .item {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          cursor: pointer;
-
-          .title {
-            margin: 0px;
-            color: #36443A;
-            font-size: 20px;
-            font-style: normal;
-            line-height: normal;
-            @include font-larken(400);
-          }
-
-          .icon-minus {
-            display: none;
-          }
-        }
-
-        .submenu {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.3s ease-out;
-          margin-top: 10px;
-          padding-left: 20px;
-
-          .submenu-item {
-            margin-bottom: 8px;
-            font-size: 12px;
-            @include font-poppins(400)
-          }
-        }
-
-        .accordion-toggle:checked {
-          &+.item {
-            .icon-plus {
-              display: none;
-            }
-
-            .icon-minus {
-              display: block;
-            }
-          }
-
-          &~.submenu {
-            max-height: 1000px;
-            /* Adjust this value based on your content */
-            transition: max-height 0.5s ease-in;
-          }
-        }
-      }
+      margin-bottom: 10px;
+      margin-top: 20px;
+      @include font-poppins(400);
     }
 
-    .journey-section {
-      background: #C1D2C1;
+    .sm-icon-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 42px;
+      column-gap: 20px;
+    }
+  }
 
-      p {
-        padding-top: 33px;
-        text-align: center;
-        color: #36443A;
-        font-size: 32px;
-        line-height: 45px;
-        padding-left: 70px;
-        padding-right: 70px;
-        @include font-larken(400);
-      }
-
-      .product-image {
-        height: 500px;
-        width: 100%;
-        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/faq/product.png");
-        background-position-y: 65px;
-        background-position-x: -138px;
-        background-repeat: no-repeat;
-      }
+  .desktop {
+    @media screen and (min-width: $on-palm) {
+      display: none;
     }
 
-    .medium-text {
+    @media screen and (min-width: $on-medium) {
+      display: block;
+    }
+  }
+
+  .mobile {
+    @media screen and (min-width: $on-palm) {
+      display: block;
+    }
+
+    @media screen and (min-width: $on-medium) {
+      display: none;
+    }
+  }
+
+  .hero-desktop {
+    height: 419px;
+    width: 100%;
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/lead.jpeg");
+    background-position-x: -125px;
+    background-size: 183%;
+    background-repeat: no-repeat;
+    background-position-y: -103px;
+  }
+
+  .title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+
+    p {
+      color: #36443A;
+      text-align: center;
+      font-size: 34px;
+      @include font-larken(400);
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .faq-section {
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    hr {
       margin-top: 10px;
-      padding-left: 40px;
-      padding-right: 40px;
-
-      p {
-        color: #36443A;
-        font-size: 12px;
-        line-height: 178%;
-        @include font-poppins(400);
-      }
     }
 
-    .large-text {
-      padding-left: 40px;
-      padding-right: 40px;
-
-      p {
-        color: #36443A;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        @include font-larken(400);
-      }
-    }
-
-    .image-1 {
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image1.png");
-      height: 274px;
-      width: 100%;
-      background-size: 100%;
-      background-position-y: -40px;
-    }
-
-    .image-2 {
-      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image2.png");
-      width: 100%;
-      height: 418px;
-      background-size: 100%;
-      background-position-y: -40px;
-    }
-
-    .accordion-section {
-      margin-top: 20px;
-
-      .header-title {
-        color: #36443A;
-        font-family: Larken;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 138%;
-        padding-left: 40px;
-        padding-right: 40px;
-        @include font-larken(400);
-      }
-    }
-
-    .text-container {
-      margin-top: 20px;
-    }
-
-    .button-container {
-      padding-bottom: 50px;
-    }
-
-    .opportunity-section {
-      margin-top: 40px;
-      padding-left: 40px;
-      padding-right: 40px;
-
-      hr {
-        margin-top: 10px;
+    .accordion-item {
+      .accordion-toggle {
+        display: none;
       }
 
-      .accordion-item {
-        .accordion-toggle {
-          display: none;
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .title {
+          margin: 0px;
+          color: #36443A;
+          font-size: 20px;
+          font-style: normal;
+          line-height: normal;
+          @include font-larken(400);
         }
 
-        .item {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          cursor: pointer;
+        .icon-minus {
+          display: none;
+        }
+      }
 
-          .title {
-            margin: 0px;
-            color: #36443A;
-            font-size: 20px;
-            font-style: normal;
-            line-height: normal;
-            @include font-larken(400);
+      .submenu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        margin-top: 10px;
+        padding-left: 20px;
+
+        .submenu-item {
+          margin-bottom: 8px;
+          font-size: 12px;
+          @include font-poppins(400)
+        }
+      }
+
+      .accordion-toggle:checked {
+        &+.item {
+          .icon-plus {
+            display: none;
           }
 
           .icon-minus {
-            display: none;
+            display: block;
           }
         }
 
-        .submenu {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.3s ease-out;
-          margin-top: 10px;
-          padding-left: 20px;
-
-          .submenu-item {
-            margin-bottom: 8px;
-            font-size: 12px;
-            @include font-poppins(400)
-          }
-        }
-
-        .accordion-toggle:checked {
-          &+.item {
-            .icon-plus {
-              display: none;
-            }
-
-            .icon-minus {
-              display: block;
-            }
-          }
-
-          &~.submenu {
-            max-height: 1000px;
-            /* Adjust this value based on your content */
-            transition: max-height 0.5s ease-in;
-          }
+        &~.submenu {
+          max-height: 1000px;
+          /* Adjust this value based on your content */
+          transition: max-height 0.5s ease-in;
         }
       }
+    }
+  }
+
+  .journey-section {
+    background: #C1D2C1;
+
+    p {
+      padding-top: 33px;
+      text-align: center;
+      color: #36443A;
+      font-size: 32px;
+      line-height: 45px;
+      padding-left: 70px;
+      padding-right: 70px;
+      @include font-larken(400);
+    }
+
+    .product-image {
+      height: 500px;
+      width: 100%;
+      background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/faq/product.png");
+      background-position-y: 65px;
+      background-position-x: -138px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .medium-text {
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    p {
+      color: #36443A;
+      font-size: 12px;
+      line-height: 178%;
+      @include font-poppins(400);
+    }
+  }
+
+  .large-text {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    p {
+      color: #36443A;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      @include font-larken(400);
+    }
+  }
+
+  .image-1 {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image1.png");
+    height: 274px;
+    width: 100%;
+    background-size: 100%;
+    background-position-y: -40px;
+  }
+
+  .image-2 {
+    background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image2.png");
+    width: 100%;
+    height: 418px;
+    background-size: 100%;
+    background-position-y: -40px;
+    @media screen and (min-width: $on-medium) {
+      height: 590px;
+      background-size: auto;
+    }
+  }
+
+  .accordion-section {
+    margin-top: 20px;
+
+    .header-title {
+      color: #36443A;
+      font-family: Larken;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%;
+      padding-left: 40px;
+      padding-right: 40px;
+      @include font-larken(400);
+    }
+  }
+
+  .text-container {
+    margin-top: 20px;
+  }
+
+  .button-container {
+    padding-bottom: 50px;
+  }
+
+  .opportunity-section {
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    hr {
+      margin-top: 10px;
+    }
+
+    .accordion-item {
+      .accordion-toggle {
+        display: none;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .title {
+          margin: 0px;
+          color: #36443A;
+          font-size: 20px;
+          font-style: normal;
+          line-height: normal;
+          @include font-larken(400);
+        }
+
+        .icon-minus {
+          display: none;
+        }
+      }
+
+      .submenu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        margin-top: 10px;
+        padding-left: 20px;
+
+        .submenu-item {
+          margin-bottom: 8px;
+          font-size: 12px;
+          @include font-poppins(400)
+        }
+      }
+
+      .accordion-toggle:checked {
+        &+.item {
+          .icon-plus {
+            display: none;
+          }
+
+          .icon-minus {
+            display: block;
+          }
+        }
+
+        &~.submenu {
+          max-height: 1000px;
+          /* Adjust this value based on your content */
+          transition: max-height 0.5s ease-in;
+        }
+      }
+    }
+  }
+
+  .normal-text {
+    color: #36443A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    @include font-poppins(400);
+  }
+
+  .bold-text {
+    color: #36443A;
+    font-size: 32px;
+    line-height: 160%;
+    @include font-larken(400);
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    .text-container {
+      width: 50%;
+      padding-left: 50px;
+      padding-top: 25px;
+    }
+    .image-section {
+      width: 50%;
+      height: 439px;
+      .image-1 {
+        background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image1.png");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -60px;
+      }
+    }
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: row;
+    .image-section {
+      width: 60%;
+      height: 673px;
+    }
+    .text-container {
+      width: 40%;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 40px;
     }
   }
 }
