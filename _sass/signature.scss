@@ -63,8 +63,14 @@
           // max-width: 210px;
         }
 
-        .green-button {
-          display: none;
+        .btn-container {
+          flex: 0 0 100%;
+          text-align: center;
+          margin-top: 20px;
+
+          .green-button {
+            width: 180px;
+          }
         }
       }
 
