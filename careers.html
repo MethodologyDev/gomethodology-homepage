@@ -23,7 +23,10 @@ permalink: /careers
   <section class="medium-text">
     <p>Methodology is a luxury, sustainable meal prep service clinically validated by Stanford University.
     </p>
-    <p>We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a closed-loop supply chain with as close to zero waste as possible.</p>
+    <p>
+      We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a
+      closed-loop supply chain with as close to zero waste as possible.
+    </p>
   </section>
 
   <section class="large-text">
@@ -46,7 +49,8 @@ permalink: /careers
 
     <section class="large-text">
       <p>
-        We're hiring for positions across the business and would love to hear from mission-aligned people with food industry (especially fine dining) experience who want to grow with us long-term.
+        We're hiring for positions across the business and would love to hear from mission-aligned people with food
+        industry (especially fine dining) experience who want to grow with us long-term.
       </p>
     </section>
   </section>
@@ -72,7 +76,7 @@ permalink: /careers
     <section class="opportunity-section">
       {% for item in site.data.career %}
       <div class="accordion-item">
-        <input type="checkbox" id="accordion{{ forloop.index }}" class="accordion-toggle">
+        <input type="checkbox" id="accordion{{ forloop.index }}" class="accordion-toggle" />
         <label for="accordion{{ forloop.index }}" class="item">
           <p class="title">{{ item.title }}</p>
           <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-plus" />
@@ -123,7 +127,8 @@ permalink: /careers
         Methodology is a luxury, sustainable meal prep service clinically validated by Stanford University.
       </p>
       <p class="normal-text">
-        We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a closed-loop supply chain with as close to zero waste as possible.
+        We're also known for packaging our ready-to-eat meals in reusable glass jars and bento bowls and are building a
+        closed-loop supply chain with as close to zero waste as possible.
       </p>
       <p class="bold-text">
         Our headquarters is based in Concord, California. We currently deliver throughout the 48 states.
@@ -139,13 +144,50 @@ permalink: /careers
       <section class="image-2"></section>
     </div>
     <div class="text-container">
-      <p class="normal-text">All of our culinary and warehouse roles are based in Concord, California, so if you'd like to join one of these teams you must be able to work from Concord. Our corporate roles are fully remote and spread throughout the world.</p>
+      <p class="normal-text">All of our culinary and warehouse roles are based in Concord, California, so if you'd like
+        to join one of these teams you must be able to work from Concord. Our corporate roles are fully remote and
+        spread throughout the world.
+      </p>
       <p class="normal-text">
         We have a hospitality-driven culture and are looking for teammates with a hospitality, service-oriented mindset.
       </p>
       <p class="bold-text">
-        We're hiring for positions across the business and would love to hear from mission-aligned people with food industry (especially fine dining) experience who want to grow with us long-term.
+        We're hiring for positions across the business and would love to hear from mission-aligned people with food
+        industry (especially fine dining) experience who want to grow with us long-term.
       </p>
+      <section class="btn-wrapper" style="justify-content: flex-start; margin-top: 5px;">
+        <div class="green-button">
+          <a href="{{ site.baseurl }}/" rel="noopener noreferrer">
+            <span class="uppercase">
+              See Open Jobs
+            </span>
+          </a>
+        </div>
+      </section>
     </div>
+  </section>
+
+  <section class="accordion-section">
+    <p class="header-title">
+      Roles based in Concord, <i>California</i>
+    </p>
+    <section class="opportunity-section">
+      {% for item in site.data.career %}
+      <div class="accordion-item">
+        <input type="checkbox" id="accordion{{ forloop.index }}" class="accordion-toggle" />
+        <label for="accordion{{ forloop.index }}" class="item">
+          <p class="title">{{ item.title }}</p>
+          <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-plus" />
+          <img src="{{ site.cdn_url }}/images/icons/icon-plus.svg" class="icon-minus" />
+        </label>
+        <div class="submenu">
+          <div class="submenu-item">
+            <p>{{ item.content }}</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      {% endfor %}
+    </section>
   </section>
 </section>

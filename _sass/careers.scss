@@ -1,6 +1,5 @@
 .careers-page {
 
-  // @include media-query($on-palm) {
   .hero {
     height: 419px;
     width: 100%;
@@ -11,11 +10,11 @@
     background-position-y: -103px;
 
     @media screen and (min-width: $on-medium) {
-      // display: none;
       height: 638px;
       background-size: cover;
       background-position-x: 0px;
       background-position-y: 0px;
+      width: 60%;
     }
   }
 
@@ -79,12 +78,14 @@
   }
 
   .desktop {
-    @media screen and (min-width: $on-palm) {
+    @include media-query($on-palm) {
       display: none;
     }
 
     @media screen and (min-width: $on-medium) {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 
@@ -264,13 +265,17 @@
     background-size: 100%;
     background-position-y: -40px;
     @media screen and (min-width: $on-medium) {
-      height: 590px;
+      height: 634px;
       background-size: auto;
     }
   }
 
   .accordion-section {
     margin-top: 20px;
+    @media screen and (min-width: $on-medium) {
+      width: 95%;
+      align-self: center;
+    }
 
     .header-title {
       color: #36443A;
@@ -380,14 +385,17 @@
   .first-section {
     display: flex;
     flex-direction: row;
+
     .text-container {
       width: 50%;
       padding-left: 50px;
       padding-top: 25px;
     }
+
     .image-section {
       width: 50%;
       height: 439px;
+
       .image-1 {
         background: url("https://d1cbtwb0qnacuk.cloudfront.net/images/careers/image1.png");
         height: 100%;
@@ -402,15 +410,18 @@
   .second-section {
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
+
     .image-section {
       width: 60%;
       height: 673px;
     }
+
     .text-container {
       width: 40%;
       padding-left: 150px;
       padding-right: 150px;
-      padding-top: 40px;
+      // padding-top: 40px;
     }
   }
 }
